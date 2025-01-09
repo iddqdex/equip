@@ -1,0 +1,1322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern>
+    <!--Pattern created with Valentina v0.7.50.0 (https://smart-pattern.com.ua/).-->
+    <version>0.9.0</version>
+    <unit>mm</unit>
+    <description/>
+    <notes/>
+    <measurements/>
+    <increments>
+        <increment description="" formula="2450" name="#Z"/>
+        <increment description="" formula="0" name="#X1"/>
+        <increment description="" formula="-1287" name="#Y1"/>
+        <increment description="" formula="836" name="#Z1"/>
+        <increment description="" formula="1135" name="#X2"/>
+        <increment description="" formula="-877" name="#Y2"/>
+        <increment description="" formula="750" name="#Z2"/>
+        <increment description="" formula="2050" name="#X3"/>
+        <increment description="" formula="-100" name="#Y3"/>
+        <increment description="" formula="600" name="#Z3"/>
+        <increment description="" formula="2050" name="#X4"/>
+        <increment description="" formula="1007" name="#Y4"/>
+        <increment description="" formula="520" name="#Z4"/>
+        <increment description="" formula="1805" name="#X5"/>
+        <increment description="" formula="1851" name="#Y5"/>
+        <increment description="" formula="450" name="#Z5"/>
+        <increment description="" formula="1066" name="#X6"/>
+        <increment description="" formula="2319" name="#Y6"/>
+        <increment description="" formula="380" name="#Z6"/>
+        <increment description="" formula="0" name="#X7"/>
+        <increment description="" formula="2510" name="#Y7"/>
+        <increment description="" formula="380" name="#Z7"/>
+        <increment description="Выгиб дуги шва" formula="0.015" name="#C"/>
+        <increment description="Припуск на швы" formula="15" name="#ШШ"/>
+        <increment description="Ширина рулона" formula="1400" name="#ШТ"/>
+        <increment description="Ширина козырька" formula="150" name="#RR"/>
+        <increment description="Вточка козырька" formula="0.15*#RR" name="#RK"/>
+        <increment description="Y кулиски относительный (относительно радиуса)" formula="-7/8" name="#YKOtn"/>
+        <increment description="Длина тубуса на полу" formula="250" name="#HT"/>
+        <increment description="Положение центра дуги на гранях крыши" formula="2/3" name="#KCR"/>
+    </increments>
+    <previewCalculations>
+        <increment description="" formula="sqrt(#X1^2 + #Y1^2 + (#Z-#Z1)^2)" name="#R1"/>
+        <increment description="" formula="sqrt(#X2^2 + #Y2^2 + (#Z-#Z2)^2)" name="#R2"/>
+        <increment description="" formula="sqrt(#X3^2 + #Y3^2 + (#Z-#Z3)^2)" name="#R3"/>
+        <increment description="" formula="sqrt(#X4^2 + #Y4^2 + (#Z-#Z4)^2)" name="#R4"/>
+        <increment description="" formula="sqrt(#X5^2 + #Y5^2 + (#Z-#Z5)^2)" name="#R5"/>
+        <increment description="" formula="sqrt(#X6^2 + #Y6^2 + (#Z-#Z6)^2)" name="#R6"/>
+        <increment description="" formula="sqrt(#X7^2 + #Y7^2 + (#Z-#Z7)^2)" name="#R7"/>
+    </previewCalculations>
+    <draw name="Шатер Пик">
+        <calculation>
+            <point id="1" mx="1.32292" my="2.64583" name="А" showLabel="true" type="single" x="7.9375" y="10.5833"/>
+            <point angle="0" basePoint="1" id="2" length="max(#X1;#X2;#X3;#X4;#X5;#X6)+100" lineColor="black" mx="1.32292" my="2.64583" name="А0" showLabel="true" type="endLine" typeLine="hair"/>
+            <point firstPoint="1" id="3" length="#X2" lineColor="black" mx="1.32292" my="2.64583" name="А2" secondPoint="2" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="1" id="4" length="#X3" lineColor="black" mx="1.32292" my="2.64583" name="А3" secondPoint="2" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="1" id="5" length="#X4" lineColor="black" mx="1.32292" my="2.64583" name="А4" secondPoint="2" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="1" id="6" length="#X5" lineColor="black" mx="1.32292" my="2.64583" name="А5" secondPoint="2" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="1" id="7" length="#X6" lineColor="black" mx="1.32292" my="2.64583" name="А6" secondPoint="2" showLabel="true" type="alongLine" typeLine="none"/>
+            <point angle="0" firstPoint="1" id="8" length="#Y1" lineColor="black" mx="1.32292" my="2.64583" name="D1" secondPoint="2" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="3" id="9" length="#Y2" lineColor="black" mx="1.32292" my="2.64583" name="D2" secondPoint="2" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="4" id="10" length="#Y3" lineColor="black" mx="1.32292" my="2.64583" name="D3" secondPoint="2" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="5" id="11" length="#Y4" lineColor="black" mx="1.32292" my="2.64583" name="D4" secondPoint="2" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="6" id="12" length="#Y5" lineColor="black" mx="1.32292" my="2.64583" name="D5" secondPoint="2" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="7" id="13" length="#Y6" lineColor="black" mx="1.32292" my="2.64583" name="D6" secondPoint="2" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="1" id="14" length="#Y7" lineColor="black" mx="1.32292" my="2.64583" name="D7" secondPoint="2" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="8" id="15" length="-#Z1" lineColor="black" mx="1.32292" my="1.40079" name="E1" secondPoint="9" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="9" id="16" length="#Z2" lineColor="black" mx="1.32292" my="2.64583" name="F2" secondPoint="8" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="9" id="17" length="-#Z2" lineColor="black" mx="1.32292" my="2.64583" name="E2" secondPoint="10" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="10" id="18" length="#Z3" lineColor="black" mx="1.32292" my="2.64583" name="F3" secondPoint="9" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="10" id="19" length="-#Z3" lineColor="black" mx="1.32292" my="2.64583" name="E3" secondPoint="11" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="11" id="20" length="#Z4" lineColor="black" mx="1.32292" my="2.64583" name="F4" secondPoint="10" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="11" id="21" length="-#Z4" lineColor="black" mx="1.32292" my="2.64583" name="E4" secondPoint="12" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="12" id="22" length="#Z5" lineColor="black" mx="1.32292" my="2.64583" name="F5" secondPoint="11" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="12" id="23" length="-#Z5" lineColor="black" mx="1.32292" my="2.64583" name="E5" secondPoint="13" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="13" id="24" length="#Z6" lineColor="black" mx="1.32292" my="2.64583" name="F6" secondPoint="12" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="13" id="25" length="-#Z6" lineColor="black" mx="1.32292" my="2.64583" name="E6" secondPoint="14" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="14" id="26" length="#Z7" lineColor="black" mx="1.32292" my="2.64583" name="F7" secondPoint="13" showLabel="true" type="normal" typeLine="hair"/>
+            <point c1Center="15" c1Radius="#R1" c2Center="16" c2Radius="#R2" crossPoint="1" id="27" mx="1.32292" my="2.64583" name="C1" showLabel="true" type="pointOfIntersectionCircles"/>
+            <line firstPoint="27" id="28" lineColor="black" secondPoint="15" typeLine="hair"/>
+            <line firstPoint="27" id="29" lineColor="black" secondPoint="16" typeLine="hair"/>
+            <line firstPoint="15" id="30" lineColor="black" secondPoint="16" typeLine="hair"/>
+            <point c1Center="17" c1Radius="#R2" c2Center="18" c2Radius="#R3" crossPoint="1" id="31" mx="1.32292" my="2.64583" name="C2" showLabel="true" type="pointOfIntersectionCircles"/>
+            <line firstPoint="31" id="32" lineColor="black" secondPoint="18" typeLine="hair"/>
+            <line firstPoint="31" id="33" lineColor="black" secondPoint="17" typeLine="hair"/>
+            <line firstPoint="17" id="34" lineColor="black" secondPoint="18" typeLine="hair"/>
+            <line firstPoint="9" id="35" lineColor="black" secondPoint="10" typeLine="hair"/>
+            <line firstPoint="8" id="36" lineColor="black" secondPoint="9" typeLine="hair"/>
+            <point c1Center="19" c1Radius="#R3" c2Center="20" c2Radius="#R4" crossPoint="1" id="37" mx="1.32292" my="2.64583" name="C3" showLabel="true" type="pointOfIntersectionCircles"/>
+            <line firstPoint="37" id="38" lineColor="black" secondPoint="19" typeLine="hair"/>
+            <line firstPoint="37" id="39" lineColor="black" secondPoint="20" typeLine="hair"/>
+            <line firstPoint="20" id="40" lineColor="black" secondPoint="19" typeLine="hair"/>
+            <point c1Center="21" c1Radius="#R4" c2Center="22" c2Radius="#R5" crossPoint="1" id="41" mx="1.32292" my="2.64583" name="C4" showLabel="true" type="pointOfIntersectionCircles"/>
+            <line firstPoint="41" id="42" lineColor="black" secondPoint="21" typeLine="hair"/>
+            <line firstPoint="21" id="43" lineColor="black" secondPoint="22" typeLine="hair"/>
+            <line firstPoint="11" id="44" lineColor="black" secondPoint="12" typeLine="hair"/>
+            <line firstPoint="22" id="45" lineColor="black" secondPoint="41" typeLine="hair"/>
+            <line firstPoint="12" id="46" lineColor="black" secondPoint="13" typeLine="hair"/>
+            <line firstPoint="23" id="47" lineColor="black" secondPoint="24" typeLine="hair"/>
+            <point c1Center="23" c1Radius="#R5" c2Center="24" c2Radius="#R6" crossPoint="1" id="48" mx="1.32292" my="2.64583" name="C5" showLabel="true" type="pointOfIntersectionCircles"/>
+            <line firstPoint="48" id="49" lineColor="black" secondPoint="23" typeLine="hair"/>
+            <line firstPoint="48" id="50" lineColor="black" secondPoint="24" typeLine="hair"/>
+            <line firstPoint="13" id="51" lineColor="black" secondPoint="14" typeLine="hair"/>
+            <line firstPoint="25" id="52" lineColor="black" secondPoint="26" typeLine="hair"/>
+            <point c1Center="25" c1Radius="#R6" c2Center="26" c2Radius="#R7" crossPoint="1" id="53" mx="1.32292" my="2.64583" name="C6" showLabel="true" type="pointOfIntersectionCircles"/>
+            <line firstPoint="53" id="54" lineColor="black" secondPoint="25" typeLine="hair"/>
+            <line firstPoint="26" id="55" lineColor="black" secondPoint="53" typeLine="hair"/>
+            <point firstPoint="15" id="57" length="CurrentLength/2" lineColor="black" mx="1.32292" my="2.64583" name="А7" secondPoint="16" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="27" id="59" length="CurrentLength*#KCR" lineColor="black" mx="1.32292" my="2.64583" name="А9" secondPoint="16" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="27" id="60" length="CurrentLength*#KCR" lineColor="black" mx="1.32292" my="2.64583" name="А10" secondPoint="15" showLabel="true" type="alongLine" typeLine="none"/>
+            <point angle="0" firstPoint="60" id="61" length="#C*Line_C1_E1" lineColor="black" mx="1.32292" my="2.64583" name="А11" secondPoint="27" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="59" id="62" length="#C*Line_C1_F2" lineColor="black" mx="1.32292" my="2.64583" name="А12" secondPoint="16" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="57" id="63" length="#C*Line_E1_F2" lineColor="black" mx="1.32292" my="2.64583" name="А13" secondPoint="15" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="57" id="64" length="#C*Line_E1_F2" lineColor="black" mx="1.32292" my="2.64583" name="А14" secondPoint="16" showLabel="true" type="normal" typeLine="hair"/>
+            <spline aScale="0" color="black" id="65" penStyle="hair" point1="16" point2="64" point3="64" point4="15" type="cubicBezier"/>
+            <spline aScale="0" color="black" id="66" penStyle="hair" point1="15" point2="63" point3="63" point4="16" type="cubicBezier"/>
+            <spline aScale="0" color="black" id="67" penStyle="hair" point1="16" point2="62" point3="62" point4="27" type="cubicBezier"/>
+            <spline aScale="0" color="black" id="68" penStyle="hair" point1="27" point2="61" point3="61" point4="15" type="cubicBezier"/>
+            <point firstPoint="17" id="69" length="CurrentLength/2" lineColor="black" mx="1.32292" my="2.64583" name="А1" secondPoint="18" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="18" id="70" length="CurrentLength*(1-#KCR)" lineColor="black" mx="1.32292" my="2.64583" name="А8" secondPoint="31" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="31" id="71" length="CurrentLength*#KCR" lineColor="black" mx="1.32292" my="2.64583" name="А15" secondPoint="17" showLabel="true" type="alongLine" typeLine="none"/>
+            <point angle="0" firstPoint="71" id="72" length="#C*Line_C2_E2" lineColor="black" mx="1.32292" my="2.64583" name="А16" secondPoint="31" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="70" id="73" length="#C*Line_C2_F3" lineColor="black" mx="1.32292" my="2.64583" name="А17" secondPoint="18" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="69" id="74" length="#C*Line_E2_F3" lineColor="black" mx="1.32292" my="2.64583" name="А18" secondPoint="18" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="69" id="75" length="#C*Line_E2_F3" lineColor="black" mx="1.32292" my="2.64583" name="А19" secondPoint="17" showLabel="true" type="normal" typeLine="hair"/>
+            <spline aScale="0" color="black" id="76" penStyle="hair" point1="31" point2="72" point3="72" point4="17" type="cubicBezier"/>
+            <spline aScale="0" color="black" id="77" penStyle="hair" point1="17" point2="75" point3="75" point4="18" type="cubicBezier"/>
+            <spline aScale="0" color="black" id="78" penStyle="hair" point1="18" point2="73" point3="73" point4="31" type="cubicBezier"/>
+            <spline aScale="0" color="black" duplicate="1" id="79" penStyle="hair" point1="17" point2="75" point3="75" point4="18" type="cubicBezier"/>
+            <spline aScale="0" color="black" id="80" penStyle="hair" point1="18" point2="74" point3="74" point4="17" type="cubicBezier"/>
+            <point firstPoint="19" id="81" length="CurrentLength/2" lineColor="black" mx="1.32292" my="2.64583" name="А20" secondPoint="20" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="19" id="82" length="CurrentLength*(1-#KCR)" lineColor="black" mx="1.32292" my="2.64583" name="А21" secondPoint="37" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="37" id="83" length="CurrentLength*#KCR" lineColor="black" mx="1.32292" my="2.64583" name="А22" secondPoint="20" showLabel="true" type="alongLine" typeLine="none"/>
+            <point angle="0" firstPoint="81" id="84" length="#C*Line_F4_E3" lineColor="black" mx="1.32292" my="2.64583" name="А23" secondPoint="19" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="81" id="85" length="#C*Line_F4_E3" lineColor="black" mx="1.32292" my="2.64583" name="А24" secondPoint="20" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="82" id="86" length="#C*Line_C3_E3" lineColor="black" mx="1.32292" my="2.64583" name="А25" secondPoint="37" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="83" id="87" length="#C*Line_C3_F4" lineColor="black" mx="1.32292" my="2.64583" name="А26" secondPoint="20" showLabel="true" type="normal" typeLine="hair"/>
+            <spline aScale="0" color="black" id="88" penStyle="hair" point1="19" point2="84" point3="84" point4="20" type="cubicBezier"/>
+            <spline aScale="0" color="black" id="89" penStyle="hair" point1="20" point2="87" point3="87" point4="37" type="cubicBezier"/>
+            <spline aScale="0" color="black" id="90" penStyle="hair" point1="37" point2="86" point3="86" point4="19" type="cubicBezier"/>
+            <spline aScale="0" color="black" id="91" penStyle="hair" point1="20" point2="85" point3="85" point4="19" type="cubicBezier"/>
+            <point firstPoint="21" id="92" length="CurrentLength/2" lineColor="black" mx="1.32292" my="2.64583" name="А27" secondPoint="22" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="21" id="93" length="CurrentLength*(1-#KCR)" lineColor="black" mx="1.32292" my="2.64583" name="А28" secondPoint="41" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="41" id="94" length="CurrentLength*#KCR" lineColor="black" mx="1.32292" my="2.64583" name="А29" secondPoint="22" showLabel="true" type="alongLine" typeLine="none"/>
+            <point angle="0" firstPoint="93" id="95" length="#C*Line_C4_E4" lineColor="black" mx="1.32292" my="1.29991" name="А30" secondPoint="41" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="94" id="96" length="#C*Line_F5_C4" lineColor="black" mx="1.32292" my="2.64583" name="А31" secondPoint="22" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="92" id="97" length="#C*Line_E4_F5" lineColor="black" mx="1.32292" my="2.64583" name="А32" secondPoint="21" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="92" id="98" length="#C*Line_E4_F5" lineColor="black" mx="1.32292" my="2.64583" name="А33" secondPoint="22" showLabel="true" type="normal" typeLine="hair"/>
+            <spline aScale="0" color="black" id="99" penStyle="hair" point1="21" point2="97" point3="97" point4="22" type="cubicBezier"/>
+            <spline aScale="0" color="black" id="100" penStyle="hair" point1="22" point2="96" point3="96" point4="41" type="cubicBezier"/>
+            <spline aScale="0" color="black" id="101" penStyle="hair" point1="41" point2="95" point3="95" point4="21" type="cubicBezier"/>
+            <spline aScale="0" color="black" id="102" penStyle="hair" point1="22" point2="98" point3="98" point4="21" type="cubicBezier"/>
+            <point firstPoint="23" id="103" length="CurrentLength/2" lineColor="black" mx="1.32292" my="2.64583" name="А34" secondPoint="24" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="23" id="104" length="CurrentLength*(1-#KCR)" lineColor="black" mx="1.32292" my="2.64583" name="А35" secondPoint="48" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="48" id="105" length="CurrentLength*#KCR" lineColor="black" mx="1.32292" my="2.64583" name="А36" secondPoint="24" showLabel="true" type="alongLine" typeLine="none"/>
+            <point angle="0" firstPoint="103" id="106" length="#C*Line_E5_F6" lineColor="black" mx="1.32292" my="2.64583" name="А37" secondPoint="24" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="103" id="107" length="#C*Line_E5_F6" lineColor="black" mx="1.32292" my="2.64583" name="А38" secondPoint="23" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="105" id="108" length="#C*Line_C5_F6" lineColor="black" mx="1.32292" my="2.64583" name="А39" secondPoint="24" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="104" id="109" length="#C*Line_C5_E5" lineColor="black" mx="1.32292" my="2.64583" name="А40" secondPoint="48" showLabel="true" type="normal" typeLine="hair"/>
+            <spline aScale="0" color="black" id="110" penStyle="hair" point1="48" point2="109" point3="109" point4="23" type="cubicBezier"/>
+            <spline aScale="0" color="black" id="111" penStyle="hair" point1="23" point2="107" point3="107" point4="24" type="cubicBezier"/>
+            <spline aScale="0" color="black" id="112" penStyle="hair" point1="24" point2="106" point3="106" point4="23" type="cubicBezier"/>
+            <spline aScale="0" color="black" id="113" penStyle="hair" point1="24" point2="108" point3="108" point4="48" type="cubicBezier"/>
+            <point firstPoint="25" id="114" length="CurrentLength/2" lineColor="black" mx="1.32292" my="2.64583" name="А41" secondPoint="26" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="25" id="115" length="CurrentLength*(1-#KCR)" lineColor="black" mx="1.32292" my="2.64583" name="А42" secondPoint="53" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="53" id="116" length="CurrentLength*#KCR" lineColor="black" mx="1.32292" my="2.64583" name="А43" secondPoint="26" showLabel="true" type="alongLine" typeLine="none"/>
+            <point angle="0" firstPoint="116" id="117" length="#C*Line_F7_C6" lineColor="black" mx="1.32292" my="2.64583" name="А44" secondPoint="26" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="115" id="118" length="#C*Line_C6_E6" lineColor="black" mx="1.32292" my="2.64583" name="А45" secondPoint="53" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="114" id="119" length="#C*Line_E6_F7" lineColor="black" mx="1.32292" my="2.64583" name="А46" secondPoint="25" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="114" id="120" length="#C*Line_E6_F7" lineColor="black" mx="1.32292" my="2.64583" name="А47" secondPoint="26" showLabel="true" type="normal" typeLine="hair"/>
+            <spline aScale="0" color="black" id="121" penStyle="hair" point1="26" point2="120" point3="120" point4="25" type="cubicBezier"/>
+            <spline aScale="0" color="black" id="122" penStyle="hair" point1="25" point2="119" point3="119" point4="26" type="cubicBezier"/>
+            <spline aScale="0" color="black" id="123" penStyle="hair" point1="26" point2="117" point3="117" point4="53" type="cubicBezier"/>
+            <spline aScale="0" color="black" id="124" penStyle="hair" point1="53" point2="118" point3="118" point4="25" type="cubicBezier"/>
+            <point firstPoint="1" id="125" length="#ШТ/2-#ШШ" lineColor="black" mx="1.32292" my="2.64583" name="А48" secondPoint="5" showLabel="true" type="alongLine" typeLine="none"/>
+            <point angle="90" basePoint="125" id="126" lineColor="black" mx="1.32292" my="2.64583" name="А49" p1Line="14" p2Line="13" showLabel="true" type="lineIntersectAxis" typeLine="hair"/>
+            <point angle="270" basePoint="125" id="127" lineColor="black" mx="1.32292" my="2.64583" name="А50" p1Line="8" p2Line="9" showLabel="true" type="lineIntersectAxis" typeLine="hair"/>
+            <operation axisType="1" center="1" id="128" suffix="L" type="flippingByAxis">
+                <source>
+                    <item idObject="126"/>
+                    <item idObject="127"/>
+                </source>
+                <destination>
+                    <item idObject="129" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="130" mx="1.32292" my="2.64583" showLabel="true"/>
+                </destination>
+            </operation>
+            <line firstPoint="8" id="131" lineColor="black" secondPoint="130" typeLine="hair"/>
+            <line firstPoint="130" id="132" lineColor="black" secondPoint="129" typeLine="hair"/>
+            <line firstPoint="129" id="133" lineColor="black" secondPoint="14" typeLine="hair"/>
+            <point firstPoint="15" id="134" length="-#RR" lineColor="black" mx="1.32292" my="2.64583" name="А51" secondPoint="27" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="16" id="135" length="-#RR" lineColor="black" mx="1.32292" my="2.64583" name="А52" secondPoint="27" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="17" id="151" length="-#RR" lineColor="black" mx="1.32292" my="2.64583" name="А53" secondPoint="31" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="18" id="152" length="-#RR" lineColor="black" mx="1.32292" my="2.64583" name="А54" secondPoint="31" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="19" id="153" length="-#RR" lineColor="black" mx="1.32292" my="2.64583" name="А55" secondPoint="37" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="20" id="154" length="-#RR" lineColor="black" mx="1.32292" my="2.64583" name="А56" secondPoint="37" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="21" id="155" length="-#RR" lineColor="black" mx="1.32292" my="2.64583" name="А57" secondPoint="41" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="22" id="156" length="-#RR" lineColor="black" mx="1.32292" my="2.64583" name="А58" secondPoint="41" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="23" id="157" length="-#RR" lineColor="black" mx="1.32292" my="2.64583" name="А59" secondPoint="48" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="24" id="158" length="-#RR" lineColor="black" mx="1.32292" my="2.64583" name="А60" secondPoint="48" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="25" id="159" length="-#RR" lineColor="black" mx="1.32292" my="2.64583" name="А61" secondPoint="53" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="26" id="160" length="-#RR" lineColor="black" mx="1.32292" my="2.64583" name="А62" secondPoint="53" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="64" id="235" length="100" lineColor="black" mx="1.32292" my="2.64583" name="А63" secondPoint="16" showLabel="true" thirdPoint="9" type="bisector" typeLine="hair"/>
+            <point firstPoint="8" id="236" length="100" lineColor="black" mx="1.32292" my="2.64583" name="А64" secondPoint="9" showLabel="true" thirdPoint="16" type="bisector" typeLine="hair"/>
+            <point id="237" mx="1.32292" my="2.64583" name="А65" p1Line1="236" p1Line2="235" p2Line1="9" p2Line2="16" showLabel="true" type="lineIntersect"/>
+            <point basePoint="237" id="238" lineColor="black" mx="1.32292" my="2.64583" name="А66" p1Line="9" p2Line="16" showLabel="true" type="height" typeLine="hair"/>
+            <arc aScale="0" angle1="0" angle2="360" center="237" color="black" id="239" penStyle="hair" radius="Line_А65_А66 - 20" type="simple"/>
+            <point firstPoint="74" id="242" length="100" lineColor="black" mx="1.32292" my="2.64583" name="А67" secondPoint="17" showLabel="true" thirdPoint="9" type="bisector" typeLine="hair"/>
+            <point firstPoint="17" id="243" length="100" lineColor="black" mx="1.32292" my="2.64583" name="А68" secondPoint="9" showLabel="true" thirdPoint="10" type="bisector" typeLine="hair"/>
+            <point id="244" mx="1.32292" my="2.64583" name="А69" p1Line1="9" p1Line2="17" p2Line1="243" p2Line2="242" showLabel="true" type="lineIntersect"/>
+            <point basePoint="244" id="245" lineColor="black" mx="1.32292" my="2.64583" name="А70" p1Line="9" p2Line="17" showLabel="true" type="height" typeLine="hair"/>
+            <arc aScale="0" angle1="0" angle2="360" center="244" color="black" id="246" penStyle="hair" radius="Line_А69_А70 - 20" type="simple"/>
+            <point angle="0" firstPoint="134" id="249" length="#RK" lineColor="black" mx="1.32292" my="2.64583" name="А71" secondPoint="15" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="135" id="250" length="-#RK" lineColor="black" mx="1.32292" my="2.64583" name="А72" secondPoint="16" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="151" id="251" length="#RK" lineColor="black" mx="1.32292" my="2.64583" name="А73" secondPoint="17" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="152" id="252" length="-#RK" lineColor="black" mx="1.32292" my="2.64583" name="А74" secondPoint="18" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="153" id="253" length="#RK" lineColor="black" mx="1.32292" my="2.64583" name="А75" secondPoint="19" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="154" id="254" length="-#RK" lineColor="black" mx="1.32292" my="2.64583" name="А76" secondPoint="20" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="155" id="255" length="#RK" lineColor="black" mx="1.32292" my="2.64583" name="А77" secondPoint="21" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="156" id="256" length="-#RK" lineColor="black" mx="1.32292" my="2.64583" name="А78" secondPoint="22" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="157" id="257" length="#RK" lineColor="black" mx="1.32292" my="2.64583" name="А79" secondPoint="23" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="158" id="258" length="-#RK" lineColor="black" mx="1.32292" my="2.64583" name="А80" secondPoint="24" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="159" id="259" length="#RK" lineColor="black" mx="1.32292" my="2.64583" name="А81" secondPoint="25" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="160" id="260" length="-#RK" lineColor="black" mx="1.32292" my="2.64583" name="А82" secondPoint="26" showLabel="true" type="normal" typeLine="hair"/>
+            <arc aScale="0" angle1="0" angle2="360" center="237" color="black" id="286" penStyle="hair" radius="Line_А65_А66 - 20 - #ШШ" type="simple"/>
+            <arc aScale="0" angle1="0" angle2="360" center="244" color="black" id="287" penStyle="hair" radius="Line_А69_А70 - 20 - #ШШ" type="simple"/>
+            <point angle="90" basePoint="125" id="643" lineColor="black" mx="1.32292" my="2.64583" name="А107" p1Line="1" p2Line="9" showLabel="true" type="lineIntersectAxis" typeLine="hair"/>
+            <point angle="90" basePoint="125" id="644" lineColor="black" mx="1.32292" my="2.64583" name="А108" p1Line="1" p2Line="10" showLabel="true" type="lineIntersectAxis" typeLine="hair"/>
+            <point angle="90" basePoint="125" id="645" lineColor="black" mx="1.32292" my="2.64583" name="А109" p1Line="1" p2Line="11" showLabel="true" type="lineIntersectAxis" typeLine="hair"/>
+            <point angle="90" basePoint="125" id="646" lineColor="black" mx="1.32292" my="2.64583" name="А110" p1Line="1" p2Line="12" showLabel="true" type="lineIntersectAxis" typeLine="hair"/>
+            <point angle="90" basePoint="125" id="647" lineColor="black" mx="1.32292" my="2.64583" name="А111" p1Line="1" p2Line="13" showLabel="true" type="lineIntersectAxis" typeLine="hair"/>
+            <operation axisType="1" center="1" id="682" suffix="а1" type="flippingByAxis">
+                <source>
+                    <item idObject="643"/>
+                    <item idObject="644"/>
+                    <item idObject="645"/>
+                    <item idObject="646"/>
+                    <item idObject="647"/>
+                </source>
+                <destination>
+                    <item idObject="683" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="684" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="685" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="686" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="687" mx="1.32292" my="2.64583" showLabel="true"/>
+                </destination>
+            </operation>
+            <point id="697" length="Spl_C1_E1/3" mx="1.32292" my="2.64583" name="А83" showLabel="true" spline="68" type="cutSpline"/>
+            <point id="698" length="2*Spl_C1_E1/3" mx="1.32292" my="2.64583" name="А84" showLabel="true" spline="68" type="cutSpline"/>
+            <point id="699" length="Spl_F2_C1/3" mx="1.32292" my="2.64583" name="А85" showLabel="true" spline="67" type="cutSpline"/>
+            <point id="700" length="2*Spl_F2_C1/3" mx="1.32292" my="2.64583" name="А86" showLabel="true" spline="67" type="cutSpline"/>
+            <point id="701" length="Spl_F3_C2/3" mx="1.32292" my="2.64583" name="А87" showLabel="true" spline="78" type="cutSpline"/>
+            <point id="702" length="2*Spl_F3_C2/3" mx="1.32292" my="2.64583" name="А88" showLabel="true" spline="78" type="cutSpline"/>
+            <point id="703" length="Spl_C2_E2/3" mx="1.32292" my="2.64583" name="А89" showLabel="true" spline="76" type="cutSpline"/>
+            <point id="704" length="2*Spl_C2_E2/3" mx="1.32292" my="2.64583" name="А90" showLabel="true" spline="76" type="cutSpline"/>
+            <point id="705" length="Spl_C3_E3/3" mx="1.32292" my="2.64583" name="А91" showLabel="true" spline="90" type="cutSpline"/>
+            <point id="706" length="2*Spl_C3_E3/3" mx="1.32292" my="2.64583" name="А92" showLabel="true" spline="90" type="cutSpline"/>
+            <point id="707" length="Spl_F4_C3/3" mx="1.32292" my="2.64583" name="А93" showLabel="true" spline="89" type="cutSpline"/>
+            <point id="708" length="2*Spl_F4_C3/3" mx="1.32292" my="2.64583" name="А94" showLabel="true" spline="89" type="cutSpline"/>
+            <point id="709" length="Spl_F5_C4/3" mx="1.32292" my="2.64583" name="А95" showLabel="true" spline="100" type="cutSpline"/>
+            <point id="710" length="2*Spl_F5_C4/3" mx="1.32292" my="2.64583" name="А96" showLabel="true" spline="100" type="cutSpline"/>
+            <point id="711" length="Spl_C4_E4/3" mx="1.32292" my="2.64583" name="А97" showLabel="true" spline="101" type="cutSpline"/>
+            <point id="712" length="2*Spl_C4_E4/3" mx="1.32292" my="2.64583" name="А98" showLabel="true" spline="101" type="cutSpline"/>
+            <point id="713" length="Spl_C5_E5/3" mx="1.32292" my="2.64583" name="А99" showLabel="true" spline="110" type="cutSpline"/>
+            <point id="714" length="2*Spl_C5_E5/3" mx="1.32292" my="2.64583" name="А100" showLabel="true" spline="110" type="cutSpline"/>
+            <point id="715" length="Spl_F6_C5/3" mx="1.32292" my="2.64583" name="А101" showLabel="true" spline="113" type="cutSpline"/>
+            <point id="716" length="2*Spl_F6_C5/3" mx="1.32292" my="2.64583" name="А102" showLabel="true" spline="113" type="cutSpline"/>
+            <point id="717" length="Spl_F7_C6/3" mx="1.32292" my="2.64583" name="А103" showLabel="true" spline="123" type="cutSpline"/>
+            <point id="718" length="2*Spl_F7_C6/3" mx="1.32292" my="2.64583" name="А104" showLabel="true" spline="123" type="cutSpline"/>
+            <point id="719" length="Spl_C6_E6/3" mx="1.32292" my="2.64583" name="А105" showLabel="true" spline="124" type="cutSpline"/>
+            <point id="720" length="2*Spl_C6_E6/3" mx="1.32292" my="2.64583" name="А106" showLabel="true" spline="124" type="cutSpline"/>
+            <point firstPoint="249" id="758" length="CurrentLength/2" lineColor="black" mx="2.64583" my="3.96875" name="А112" secondPoint="250" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="251" id="759" length="CurrentLength/2" lineColor="black" mx="2.64583" my="3.96875" name="А113" secondPoint="252" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="253" id="760" length="CurrentLength/2" lineColor="black" mx="2.64583" my="3.96875" name="А114" secondPoint="254" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="255" id="761" length="CurrentLength/2" lineColor="black" mx="2.64583" my="3.96875" name="А115" secondPoint="256" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="257" id="762" length="CurrentLength/2" lineColor="black" mx="2.64583" my="3.96875" name="А116" secondPoint="258" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="259" id="763" length="CurrentLength/2" lineColor="black" mx="2.64583" my="3.96875" name="А117" secondPoint="260" showLabel="true" type="alongLine" typeLine="none"/>
+            <point angle="0" firstPoint="758" id="764" length="2*#C*Line_А71_А112" lineColor="black" mx="2.64583" my="3.96875" name="А118" secondPoint="249" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="759" id="765" length="2*#C*Line_А73_А113" lineColor="black" mx="2.64583" my="3.96875" name="А119" secondPoint="251" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="760" id="766" length="2*#C*Line_А75_А114" lineColor="black" mx="2.64583" my="3.96875" name="А120" secondPoint="253" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="761" id="767" length="2*#C*Line_А77_А115" lineColor="black" mx="2.64583" my="3.96875" name="А121" secondPoint="255" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="762" id="768" length="2*#C*Line_А79_А116" lineColor="black" mx="2.64583" my="3.96875" name="А122" secondPoint="257" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="763" id="769" length="2*#C*Line_А81_А117" lineColor="black" mx="2.64583" my="3.96875" name="А123" secondPoint="259" showLabel="true" type="normal" typeLine="hair"/>
+            <spline aScale="0" color="black" id="770" penStyle="hair" point1="249" point2="764" point3="764" point4="250" type="cubicBezier"/>
+            <spline aScale="0" color="black" id="771" penStyle="hair" point1="251" point2="765" point3="765" point4="252" type="cubicBezier"/>
+            <spline aScale="0" color="black" id="772" penStyle="hair" point1="253" point2="766" point3="766" point4="254" type="cubicBezier"/>
+            <spline aScale="0" color="black" id="773" penStyle="hair" point1="255" point2="767" point3="767" point4="256" type="cubicBezier"/>
+            <spline aScale="0" color="black" id="774" penStyle="hair" point1="257" point2="768" point3="768" point4="258" type="cubicBezier"/>
+            <spline aScale="0" color="black" id="775" penStyle="hair" point1="259" point2="769" point3="769" point4="260" type="cubicBezier"/>
+        </calculation>
+        <modeling>
+            <point id="136" idObject="15" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="137" idObject="8" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="138" idObject="9" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="139" idObject="16" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <spline id="140" idObject="65" inUse="false" type="modelingSpline"/>
+            <point id="161" idObject="14" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="162" idObject="126" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="163" idObject="127" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="164" idObject="8" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="165" idObject="130" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="166" idObject="129" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="168" idObject="126" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="169" idObject="13" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="170" idObject="12" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="171" idObject="11" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="172" idObject="10" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="173" idObject="9" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="174" idObject="127" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="178" idObject="9" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="179" idObject="10" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="180" idObject="18" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <spline id="181" idObject="80" inUse="false" type="modelingSpline"/>
+            <point id="191" idObject="10" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="192" idObject="11" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <spline id="193" idObject="91" inUse="false" type="modelingSpline"/>
+            <point id="202" idObject="11" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="203" idObject="12" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <spline id="204" idObject="102" inUse="false" type="modelingSpline"/>
+            <point id="213" idObject="13" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <spline id="214" idObject="112" inUse="false" type="modelingSpline"/>
+            <point id="215" idObject="12" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="224" idObject="13" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="225" idObject="14" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <spline id="226" idObject="121" inUse="false" type="modelingSpline"/>
+            <arc id="240" idObject="239" inUse="false" type="modeling"/>
+            <path cut="true" firstToCountour="false" id="241" inUse="false" lastToCountour="false" name="Вход" type="2" typeLine="hair" visible="1">
+                <nodes>
+                    <node idObject="240" reverse="0" type="NodeArc"/>
+                </nodes>
+            </path>
+            <arc id="247" idObject="246" inUse="false" type="modeling"/>
+            <path cut="false" firstToCountour="false" id="248" inUse="false" lastToCountour="false" name="Вход дежурного" type="2" typeLine="hair" visible="1">
+                <nodes>
+                    <node idObject="247" reverse="0" type="NodeArc"/>
+                </nodes>
+            </path>
+            <point id="273" idObject="249" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="274" idObject="250" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <spline id="275" idObject="67" inUse="false" type="modelingSpline"/>
+            <spline id="276" idObject="68" inUse="false" type="modelingSpline"/>
+            <spline id="278" idObject="66" inUse="false" type="modelingSpline"/>
+            <path cut="false" firstToCountour="false" id="279" inUse="false" lastToCountour="false" name="Безымянный контур" type="2" typeLine="hair" visible="1">
+                <nodes>
+                    <node idObject="278" reverse="0" type="NodeSpline"/>
+                </nodes>
+            </path>
+            <arc id="288" idObject="287" inUse="false" type="modeling"/>
+            <path cut="false" firstToCountour="false" id="289" inUse="false" lastToCountour="false" name="Безымянный контур" type="2" typeLine="hair" visible="1">
+                <nodes>
+                    <node idObject="288" reverse="0" type="NodeArc"/>
+                </nodes>
+            </path>
+            <arc id="290" idObject="286" inUse="false" type="modeling"/>
+            <path cut="false" firstToCountour="false" id="291" inUse="false" lastToCountour="false" name="Безымянный контур" type="2" typeLine="hair" visible="1">
+                <nodes>
+                    <node idObject="290" reverse="0" type="NodeArc"/>
+                </nodes>
+            </path>
+            <point id="312" idObject="251" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="313" idObject="252" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <spline id="314" idObject="78" inUse="false" type="modelingSpline"/>
+            <spline id="315" idObject="76" inUse="false" type="modelingSpline"/>
+            <spline id="323" idObject="79" inUse="false" type="modelingSpline"/>
+            <path cut="false" firstToCountour="false" id="324" inUse="false" lastToCountour="false" name="Безымянный контур" type="2" typeLine="hair" visible="1">
+                <nodes>
+                    <node idObject="323" reverse="0" type="NodeSpline"/>
+                </nodes>
+            </path>
+            <point id="325" idObject="253" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="326" idObject="254" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <spline id="327" idObject="89" inUse="false" type="modelingSpline"/>
+            <spline id="328" idObject="90" inUse="false" type="modelingSpline"/>
+            <spline id="330" idObject="88" inUse="false" type="modelingSpline"/>
+            <path cut="false" firstToCountour="false" id="331" inUse="false" lastToCountour="false" name="Безымянный контур" type="2" typeLine="hair" visible="1">
+                <nodes>
+                    <node idObject="330" reverse="0" type="NodeSpline"/>
+                </nodes>
+            </path>
+            <point id="338" idObject="255" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="339" idObject="256" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <spline id="340" idObject="100" inUse="false" type="modelingSpline"/>
+            <spline id="341" idObject="101" inUse="false" type="modelingSpline"/>
+            <spline id="343" idObject="99" inUse="false" type="modelingSpline"/>
+            <path cut="false" firstToCountour="false" id="344" inUse="false" lastToCountour="false" name="Безымянный контур" type="2" typeLine="hair" visible="1">
+                <nodes>
+                    <node idObject="343" reverse="0" type="NodeSpline"/>
+                </nodes>
+            </path>
+            <point id="351" idObject="257" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="352" idObject="258" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <spline id="353" idObject="113" inUse="false" type="modelingSpline"/>
+            <spline id="354" idObject="110" inUse="false" type="modelingSpline"/>
+            <spline id="356" idObject="111" inUse="false" type="modelingSpline"/>
+            <path cut="false" firstToCountour="false" id="357" inUse="false" lastToCountour="false" name="Безымянный контур" type="2" typeLine="hair" visible="1">
+                <nodes>
+                    <node idObject="356" reverse="0" type="NodeSpline"/>
+                </nodes>
+            </path>
+            <point id="364" idObject="259" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="365" idObject="260" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="366" idObject="26" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <spline id="367" idObject="123" inUse="false" type="modelingSpline"/>
+            <spline id="368" idObject="124" inUse="false" type="modelingSpline"/>
+            <spline id="370" idObject="122" inUse="false" type="modelingSpline"/>
+            <path cut="false" firstToCountour="false" id="371" inUse="false" lastToCountour="false" name="Безымянный контур" type="2" typeLine="hair" visible="1">
+                <nodes>
+                    <node idObject="370" reverse="0" type="NodeSpline"/>
+                </nodes>
+            </path>
+            <point id="648" idObject="1" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="649" idObject="647" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="650" idObject="646" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="651" idObject="1" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="652" idObject="645" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="653" idObject="644" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="654" idObject="1" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="655" idObject="643" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <path cut="false" firstToCountour="false" id="656" inUse="false" lastToCountour="false" name="Безымянный контур" type="2" typeLine="hair" visible="1">
+                <nodes>
+                    <node idObject="648" type="NodePoint"/>
+                    <node idObject="649" type="NodePoint"/>
+                    <node idObject="650" type="NodePoint"/>
+                    <node idObject="651" type="NodePoint"/>
+                    <node idObject="652" type="NodePoint"/>
+                    <node idObject="653" type="NodePoint"/>
+                    <node idObject="654" type="NodePoint"/>
+                    <node idObject="655" type="NodePoint"/>
+                </nodes>
+            </path>
+            <point id="668" idObject="13" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="669" idObject="647" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="670" idObject="646" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="671" idObject="12" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="672" idObject="11" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="673" idObject="645" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="674" idObject="644" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="675" idObject="10" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="676" idObject="9" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="677" idObject="643" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <path cut="false" firstToCountour="false" id="678" inUse="false" lastToCountour="false" name="Безымянный контур" type="2" typeLine="hair" visible="1">
+                <nodes>
+                    <node idObject="668" type="NodePoint"/>
+                    <node idObject="669" type="NodePoint"/>
+                    <node idObject="670" type="NodePoint"/>
+                    <node idObject="671" type="NodePoint"/>
+                    <node idObject="672" type="NodePoint"/>
+                    <node idObject="673" type="NodePoint"/>
+                    <node idObject="674" type="NodePoint"/>
+                    <node idObject="675" type="NodePoint"/>
+                    <node idObject="676" type="NodePoint"/>
+                    <node idObject="677" type="NodePoint"/>
+                </nodes>
+            </path>
+            <point id="679" idObject="8" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="680" idObject="14" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <path cut="false" firstToCountour="false" id="681" inUse="false" lastToCountour="false" name="Безымянный контур" type="2" typeLine="hair" visible="1">
+                <nodes>
+                    <node idObject="679" type="NodePoint"/>
+                    <node idObject="680" type="NodePoint"/>
+                </nodes>
+            </path>
+            <point id="688" idObject="683" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="689" idObject="1" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="690" idObject="684" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="691" idObject="685" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="692" idObject="1" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="693" idObject="686" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="694" idObject="687" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="695" idObject="1" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <path cut="false" firstToCountour="false" id="696" inUse="false" lastToCountour="false" name="Безымянный контур" type="2" typeLine="hair" visible="1">
+                <nodes>
+                    <node idObject="688" type="NodePoint"/>
+                    <node idObject="689" type="NodePoint"/>
+                    <node idObject="690" type="NodePoint"/>
+                    <node idObject="691" type="NodePoint"/>
+                    <node idObject="692" type="NodePoint"/>
+                    <node idObject="693" type="NodePoint"/>
+                    <node idObject="694" type="NodePoint"/>
+                    <node idObject="695" type="NodePoint"/>
+                </nodes>
+            </path>
+            <point angle="0" height="10" id="722" idObject="697" inUse="false" placeLabelType="8" type="placeLabel" visible="1" width="10"/>
+            <point angle="0" height="10" id="723" idObject="698" inUse="false" placeLabelType="8" type="placeLabel" visible="1" width="10"/>
+            <point angle="0" height="10" id="724" idObject="700" inUse="false" placeLabelType="8" type="placeLabel" visible="1" width="10"/>
+            <point angle="0" height="10" id="725" idObject="699" inUse="false" placeLabelType="8" type="placeLabel" visible="1" width="10"/>
+            <point angle="0" height="10" id="726" idObject="703" inUse="false" placeLabelType="8" type="placeLabel" visible="1" width="10"/>
+            <point angle="0" height="10" id="727" idObject="702" inUse="false" placeLabelType="8" type="placeLabel" visible="1" width="10"/>
+            <point angle="0" height="10" id="729" idObject="701" inUse="false" placeLabelType="8" type="placeLabel" visible="1" width="10"/>
+            <point angle="0" height="10" id="730" idObject="704" inUse="false" placeLabelType="8" type="placeLabel" visible="1" width="10"/>
+            <point angle="0" height="10" id="731" idObject="705" inUse="false" placeLabelType="8" type="placeLabel" visible="1" width="10"/>
+            <point angle="0" height="10" id="732" idObject="706" inUse="false" placeLabelType="8" type="placeLabel" visible="1" width="10"/>
+            <point angle="0" height="10" id="733" idObject="707" inUse="false" placeLabelType="8" type="placeLabel" visible="1" width="10"/>
+            <point angle="0" height="10" id="734" idObject="708" inUse="false" placeLabelType="8" type="placeLabel" visible="1" width="10"/>
+            <point angle="0" height="10" id="735" idObject="709" inUse="false" placeLabelType="8" type="placeLabel" visible="1" width="10"/>
+            <point angle="0" height="10" id="736" idObject="710" inUse="false" placeLabelType="8" type="placeLabel" visible="1" width="10"/>
+            <point angle="0" height="10" id="737" idObject="711" inUse="false" placeLabelType="8" type="placeLabel" visible="1" width="10"/>
+            <point angle="0" height="10" id="738" idObject="712" inUse="false" placeLabelType="8" type="placeLabel" visible="1" width="10"/>
+            <point angle="0" height="10" id="739" idObject="713" inUse="false" placeLabelType="8" type="placeLabel" visible="1" width="10"/>
+            <point angle="0" height="10" id="740" idObject="714" inUse="false" placeLabelType="8" type="placeLabel" visible="1" width="10"/>
+            <point angle="0" height="10" id="741" idObject="715" inUse="false" placeLabelType="8" type="placeLabel" visible="1" width="10"/>
+            <point angle="0" height="10" id="742" idObject="716" inUse="false" placeLabelType="8" type="placeLabel" visible="1" width="10"/>
+            <point angle="0" height="10" id="743" idObject="717" inUse="false" placeLabelType="8" type="placeLabel" visible="1" width="10"/>
+            <point angle="0" height="10" id="744" idObject="718" inUse="false" placeLabelType="8" type="placeLabel" visible="1" width="10"/>
+            <point angle="0" height="10" id="745" idObject="719" inUse="false" placeLabelType="8" type="placeLabel" visible="1" width="10"/>
+            <point angle="0" height="10" id="746" idObject="720" inUse="false" placeLabelType="8" type="placeLabel" visible="1" width="10"/>
+            <point id="748" idObject="8" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="749" idObject="17" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="750" idObject="19" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="751" idObject="20" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="752" idObject="21" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="753" idObject="22" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="754" idObject="23" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="755" idObject="24" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="756" idObject="25" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="757" idObject="26" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <spline id="776" idObject="770" inUse="false" type="modelingSpline"/>
+            <spline id="777" idObject="771" inUse="false" type="modelingSpline"/>
+            <spline id="778" idObject="772" inUse="false" type="modelingSpline"/>
+            <spline id="779" idObject="773" inUse="false" type="modelingSpline"/>
+            <spline id="780" idObject="774" inUse="false" type="modelingSpline"/>
+            <spline id="781" idObject="775" inUse="false" type="modelingSpline"/>
+        </modeling>
+        <details>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="141" inLayout="false" mx="-67.1361" my="-167.84" name="Стенка1" seamAllowance="true" uuid="{fb670350-895f-4f6e-b6cc-338b1cd83246}" version="2" width="#ШШ">
+                <data annotation="" foldPosition="" fontSize="0" height="50" letter="" mx="2639.33" my="5492.74" onFold="false" orientation="" quantity="2" rotation="0" rotationWay="" tilt="" visible="true" width="100">
+                    <line alignment="4" bold="false" italic="false" sfIncrement="2" text="%pName%"/>
+                    <line alignment="4" bold="false" italic="false" sfIncrement="1" text="%pQuantity% шт"/>
+                </data>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="136" type="NodePoint"/>
+                    <node idObject="137" type="NodePoint"/>
+                    <node after="0" idObject="138" type="NodePoint"/>
+                    <node before="0" idObject="139" type="NodePoint"/>
+                    <node idObject="140" reverse="0" type="NodeSpline"/>
+                </nodes>
+                <iPaths>
+                    <record path="241"/>
+                    <record path="291"/>
+                </iPaths>
+            </detail>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="167" inLayout="true" mx="-52.0959" my="-233.061" name="Дно1" seamAllowance="true" united="false" uuid="{4c188483-35e0-49df-ad2a-3c06546329d5}" version="2" width="#ШШ">
+                <data annotation="" foldPosition="" fontSize="0" height="50" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="true" width="100">
+                    <line alignment="4" bold="false" italic="false" sfIncrement="2" text="%pName%"/>
+                    <line alignment="4" bold="false" italic="false" sfIncrement="1" text="%pQuantity% шт"/>
+                </data>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="161" type="NodePoint"/>
+                    <node idObject="162" type="NodePoint"/>
+                    <node idObject="163" type="NodePoint"/>
+                    <node idObject="164" type="NodePoint"/>
+                    <node idObject="165" type="NodePoint"/>
+                    <node idObject="166" type="NodePoint"/>
+                    <node excluded="true" idObject="748" type="NodePoint"/>
+                </nodes>
+                <iPaths>
+                    <record path="656"/>
+                    <record path="681"/>
+                    <record path="696"/>
+                </iPaths>
+            </detail>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="175" mx="30.1608" my="-263.222" name="Дно2" seamAllowance="true" united="false" uuid="{6778bb23-7b16-48c4-a543-b51c666b5a8e}" version="2" width="#ШШ">
+                <data annotation="" foldPosition="" fontSize="0" height="50" letter="" mx="4770.82" my="-1730.63" onFold="false" orientation="" quantity="2" rotation="0" rotationWay="" tilt="" visible="true" width="100">
+                    <line alignment="4" bold="false" italic="false" sfIncrement="2" text="%pName%"/>
+                    <line alignment="4" bold="false" italic="false" sfIncrement="1" text="%pQuantity% шт"/>
+                </data>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="168" type="NodePoint"/>
+                    <node idObject="169" type="NodePoint"/>
+                    <node idObject="170" type="NodePoint"/>
+                    <node idObject="171" type="NodePoint"/>
+                    <node idObject="172" type="NodePoint"/>
+                    <node idObject="173" type="NodePoint"/>
+                    <node idObject="174" type="NodePoint"/>
+                </nodes>
+                <iPaths>
+                    <record path="678"/>
+                </iPaths>
+            </detail>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="182" inLayout="false" mx="3.21053" my="-103.723" name="Стенка2" seamAllowance="true" uuid="{b37f043c-fd18-4d2f-b66b-11e8a72e2c82}" version="2" width="#ШШ">
+                <data annotation="" foldPosition="" fontSize="0" height="50" letter="" mx="6807.09" my="2760.64" onFold="false" orientation="" quantity="2" rotation="0" rotationWay="" tilt="" visible="true" width="100">
+                    <line alignment="4" bold="false" italic="false" sfIncrement="2" text="%pName%"/>
+                    <line alignment="4" bold="false" italic="false" sfIncrement="1" text="%pQuantity% шт"/>
+                </data>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node before="0" idObject="178" type="NodePoint"/>
+                    <node idObject="179" type="NodePoint"/>
+                    <node idObject="180" type="NodePoint"/>
+                    <node idObject="181" reverse="0" type="NodeSpline"/>
+                    <node after="0" idObject="749" type="NodePoint"/>
+                </nodes>
+                <iPaths>
+                    <record path="248"/>
+                    <record path="289"/>
+                </iPaths>
+            </detail>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="194" inLayout="false" mx="138.086" my="40.9233" name="Стенка3" seamAllowance="true" uuid="{61afbe76-f873-44f9-adb1-3eaf4bd4fc5c}" version="2" width="#ШШ">
+                <data annotation="" foldPosition="" fontSize="0" height="50" letter="" mx="8594.62" my="-1706.75" onFold="false" orientation="" quantity="2" rotation="0" rotationWay="" tilt="" visible="true" width="100">
+                    <line alignment="4" bold="false" italic="false" sfIncrement="2" text="%pName%"/>
+                    <line alignment="4" bold="false" italic="false" sfIncrement="1" text="%pQuantity% шт"/>
+                </data>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="191" type="NodePoint"/>
+                    <node after="0" idObject="192" type="NodePoint"/>
+                    <node before="0" idObject="751" type="NodePoint"/>
+                    <node idObject="193" reverse="0" type="NodeSpline"/>
+                    <node idObject="750" type="NodePoint"/>
+                </nodes>
+            </detail>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="205" inLayout="false" mx="208.778" my="-36.508" name="Стенка4" seamAllowance="true" uuid="{64f3b141-02ce-4803-84e5-737afb442a74}" version="2" width="#ШШ">
+                <data annotation="" foldPosition="" fontSize="0" height="50" letter="" mx="8019.31" my="-5590.67" onFold="false" orientation="" quantity="2" rotation="0" rotationWay="" tilt="" visible="true" width="100">
+                    <line alignment="4" bold="false" italic="false" sfIncrement="2" text="%pName%"/>
+                    <line alignment="4" bold="false" italic="false" sfIncrement="1" text="%pQuantity% шт"/>
+                </data>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node before="0" idObject="202" type="NodePoint"/>
+                    <node after="0" idObject="203" type="NodePoint"/>
+                    <node before="0" idObject="753" type="NodePoint"/>
+                    <node idObject="204" reverse="0" type="NodeSpline"/>
+                    <node after="0" idObject="752" type="NodePoint"/>
+                </nodes>
+            </detail>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="216" inLayout="false" mx="276.316" my="-202.183" name="Стенка5" seamAllowance="true" uuid="{9ca2c978-f585-42c6-9bfb-74f6a22f83aa}" version="2" width="#ШШ">
+                <data annotation="" foldPosition="" fontSize="0" height="50" letter="" mx="5715.39" my="-8506.16" onFold="false" orientation="" quantity="2" rotation="0" rotationWay="" tilt="" visible="true" width="100">
+                    <line alignment="4" bold="false" italic="false" sfIncrement="2" text="%pName%"/>
+                    <line alignment="4" bold="false" italic="false" sfIncrement="1" text="%pQuantity% шт"/>
+                </data>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node after="0" idObject="213" type="NodePoint"/>
+                    <node before="0" idObject="755" type="NodePoint"/>
+                    <node idObject="214" reverse="0" type="NodeSpline"/>
+                    <node after="0" idObject="754" type="NodePoint"/>
+                    <node before="0" idObject="215" type="NodePoint"/>
+                </nodes>
+            </detail>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="227" inLayout="false" mx="243.152" my="-459.176" name="Стенка6" seamAllowance="true" uuid="{556e311a-30f5-4c85-a1f5-027f3318bf83}" version="2" width="#ШШ">
+                <data annotation="" foldPosition="" fontSize="0" height="50" letter="" mx="1728.49" my="-9950.25" onFold="false" orientation="" quantity="2" rotation="0" rotationWay="" tilt="" visible="true" width="100">
+                    <line alignment="4" bold="false" italic="false" sfIncrement="2" text="%pName%"/>
+                    <line alignment="4" bold="false" italic="false" sfIncrement="1" text="%pQuantity% шт"/>
+                </data>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node before="0" idObject="224" type="NodePoint"/>
+                    <node idObject="225" type="NodePoint"/>
+                    <node idObject="757" type="NodePoint"/>
+                    <node idObject="226" reverse="0" type="NodeSpline"/>
+                    <node after="0" idObject="756" type="NodePoint"/>
+                </nodes>
+            </detail>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="277" mx="65.2909" my="43.244" name="Крыша1" seamAllowance="true" uuid="{2ed4b48f-1cff-4de3-ac8f-f2a97c50d166}" version="2" width="#ШШ">
+                <data annotation="" foldPosition="" fontSize="0" height="50" letter="" mx="3537.27" my="8659.6" onFold="false" orientation="" quantity="2" rotation="0" rotationWay="" tilt="" visible="true" width="100">
+                    <line alignment="4" bold="false" italic="false" sfIncrement="2" text="%pName%"/>
+                    <line alignment="4" bold="false" italic="false" sfIncrement="1" text="%pQuantity% шт"/>
+                </data>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node excluded="true" idObject="273" type="NodePoint"/>
+                    <node idObject="776" reverse="0" type="NodeSpline"/>
+                    <node excluded="true" idObject="274" type="NodePoint"/>
+                    <node idObject="275" reverse="0" type="NodeSpline"/>
+                    <node idObject="276" reverse="0" type="NodeSpline"/>
+                </nodes>
+                <iPaths>
+                    <record path="279"/>
+                </iPaths>
+                <placeLabels>
+                    <record>722</record>
+                    <record>723</record>
+                    <record>724</record>
+                    <record>725</record>
+                </placeLabels>
+            </detail>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="316" inLayout="false" mx="129.049" my="68.2117" name="Крыша2" seamAllowance="true" uuid="{0c94a57b-6405-49c4-ad8b-8e30063290eb}" version="2" width="#ШШ">
+                <data annotation="" foldPosition="" fontSize="0" height="50" letter="" mx="8189.62" my="5398.09" onFold="false" orientation="" quantity="2" rotation="0" rotationWay="" tilt="" visible="true" width="100">
+                    <line alignment="4" bold="false" italic="false" sfIncrement="2" text="%pName%"/>
+                    <line alignment="4" bold="false" italic="false" sfIncrement="1" text="%pQuantity% шт"/>
+                </data>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="312" type="NodePoint"/>
+                    <node idObject="777" reverse="0" type="NodeSpline"/>
+                    <node idObject="313" type="NodePoint"/>
+                    <node idObject="314" reverse="0" type="NodeSpline"/>
+                    <node idObject="315" reverse="0" type="NodeSpline"/>
+                </nodes>
+                <iPaths>
+                    <record path="324"/>
+                </iPaths>
+                <placeLabels>
+                    <record>726</record>
+                    <record>727</record>
+                    <record>729</record>
+                    <record>730</record>
+                </placeLabels>
+            </detail>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="329" inLayout="false" mx="357.589" my="46.15" name="Крыша3" seamAllowance="true" uuid="{f8a5ad18-9438-4157-a3e6-bcd8d26b167d}" version="2" width="#ШШ">
+                <data annotation="" foldPosition="" fontSize="0" height="50" letter="" mx="11094.2" my="-1609.56" onFold="false" orientation="" quantity="2" rotation="0" rotationWay="" tilt="" visible="true" width="100">
+                    <line alignment="4" bold="false" italic="false" sfIncrement="2" text="%pName%"/>
+                    <line alignment="4" bold="false" italic="false" sfIncrement="1" text="%pQuantity% шт"/>
+                </data>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="325" type="NodePoint"/>
+                    <node idObject="778" reverse="0" type="NodeSpline"/>
+                    <node idObject="326" type="NodePoint"/>
+                    <node idObject="327" reverse="0" type="NodeSpline"/>
+                    <node idObject="328" reverse="0" type="NodeSpline"/>
+                </nodes>
+                <iPaths>
+                    <record path="331"/>
+                </iPaths>
+                <placeLabels>
+                    <record>731</record>
+                    <record>732</record>
+                    <record>733</record>
+                    <record>734</record>
+                </placeLabels>
+            </detail>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="342" inLayout="false" mx="390.835" my="-66.3681" name="Крыша4" seamAllowance="true" uuid="{0f5c2963-e11a-4ae2-8539-0ace1b552d25}" version="2" width="#ШШ">
+                <data annotation="" foldPosition="" fontSize="0" height="50" letter="" mx="10702.3" my="-5717.49" onFold="false" orientation="" quantity="2" rotation="0" rotationWay="" tilt="" visible="true" width="100">
+                    <line alignment="4" bold="false" italic="false" sfIncrement="2" text="%pName%"/>
+                    <line alignment="4" bold="false" italic="false" sfIncrement="1" text="%pQuantity% шт"/>
+                </data>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="338" type="NodePoint"/>
+                    <node idObject="779" reverse="0" type="NodeSpline"/>
+                    <node idObject="339" type="NodePoint"/>
+                    <node idObject="340" reverse="0" type="NodeSpline"/>
+                    <node idObject="341" reverse="0" type="NodeSpline"/>
+                </nodes>
+                <iPaths>
+                    <record path="344"/>
+                </iPaths>
+                <placeLabels>
+                    <record>735</record>
+                    <record>736</record>
+                    <record>737</record>
+                    <record>738</record>
+                </placeLabels>
+            </detail>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="355" inLayout="false" mx="385.056" my="-384.248" name="Крыша5" seamAllowance="true" uuid="{3dc1f68d-6d68-4cfb-a71c-ec2aa569b6d9}" version="2" width="#ШШ">
+                <data annotation="" foldPosition="" fontSize="0" height="50" letter="" mx="7580.47" my="-12046.8" onFold="false" orientation="" quantity="2" rotation="0" rotationWay="" tilt="" visible="true" width="100">
+                    <line alignment="4" bold="false" italic="false" sfIncrement="2" text="%pName%"/>
+                    <line alignment="4" bold="false" italic="false" sfIncrement="1" text="%pQuantity% шт"/>
+                </data>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="351" type="NodePoint"/>
+                    <node idObject="780" reverse="0" type="NodeSpline"/>
+                    <node idObject="352" type="NodePoint"/>
+                    <node idObject="353" reverse="0" type="NodeSpline"/>
+                    <node idObject="354" reverse="0" type="NodeSpline"/>
+                </nodes>
+                <iPaths>
+                    <record path="357"/>
+                </iPaths>
+                <placeLabels>
+                    <record>739</record>
+                    <record>740</record>
+                    <record>741</record>
+                    <record>742</record>
+                </placeLabels>
+            </detail>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="369" inLayout="false" mx="239.663" my="-739.267" name="Крыша6" seamAllowance="true" uuid="{3c8a1e9c-2729-4ae1-a5bc-26482064ba5e}" version="2" width="#ШШ">
+                <data annotation="" foldPosition="" fontSize="0" height="50" letter="" mx="2372.99" my="-13187.9" onFold="false" orientation="" quantity="2" rotation="0" rotationWay="" tilt="" visible="true" width="100">
+                    <line alignment="4" bold="false" italic="false" sfIncrement="2" text="%pName%"/>
+                    <line alignment="4" bold="false" italic="false" sfIncrement="1" text="%pQuantity% шт"/>
+                </data>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="364" type="NodePoint"/>
+                    <node idObject="781" reverse="0" type="NodeSpline"/>
+                    <node idObject="365" type="NodePoint"/>
+                    <node idObject="366" type="NodePoint"/>
+                    <node idObject="367" reverse="0" type="NodeSpline"/>
+                    <node idObject="368" reverse="0" type="NodeSpline"/>
+                </nodes>
+                <iPaths>
+                    <record path="371"/>
+                </iPaths>
+                <placeLabels>
+                    <record>743</record>
+                    <record>744</record>
+                    <record>745</record>
+                    <record>746</record>
+                </placeLabels>
+            </detail>
+        </details>
+        <groups/>
+    </draw>
+    <draw name="Тубус основной">
+        <calculation>
+            <point id="378" mx="1.32292" my="2.64583" name="Б" showLabel="true" type="single" x="6228.44" y="10.5833"/>
+            <point angle="0" basePoint="378" id="379" length="degTorad(180) * RadiusArc_А65_239" lineColor="black" mx="1.32292" my="2.64583" name="Б1" showLabel="true" type="endLine" typeLine="hair"/>
+            <point firstPoint="378" id="380" length="degTorad(15) * RadiusArc_А65_239" lineColor="black" mx="1.32292" my="2.64583" name="Б2" secondPoint="379" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="378" id="381" length="degTorad(30) * RadiusArc_А65_239" lineColor="black" mx="1.32292" my="2.64583" name="Б3" secondPoint="379" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="378" id="382" length="degTorad(45) * RadiusArc_А65_239" lineColor="black" mx="1.32292" my="2.64583" name="Б4" secondPoint="379" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="378" id="383" length="degTorad(60) * RadiusArc_А65_239" lineColor="black" mx="1.32292" my="2.64583" name="Б5" secondPoint="379" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="378" id="384" length="degTorad(75) * RadiusArc_А65_239" lineColor="black" mx="1.32292" my="2.64583" name="Б6" secondPoint="379" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="378" id="385" length="degTorad(90) * RadiusArc_А65_239" lineColor="black" mx="1.32292" my="2.64583" name="Б7" secondPoint="379" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="378" id="386" length="degTorad(105) * RadiusArc_А65_239" lineColor="black" mx="1.32292" my="2.64583" name="Б8" secondPoint="379" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="378" id="387" length="degTorad(120) * RadiusArc_А65_239" lineColor="black" mx="1.32292" my="2.64583" name="Б9" secondPoint="379" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="378" id="388" length="degTorad(135) * RadiusArc_А65_239" lineColor="black" mx="1.32292" my="2.64583" name="Б10" secondPoint="379" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="378" id="389" length="degTorad(150) * RadiusArc_А65_239" lineColor="black" mx="1.32292" my="2.64583" name="Б11" secondPoint="379" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="378" id="390" length="degTorad(165) * RadiusArc_А65_239" lineColor="black" mx="1.32292" my="2.64583" name="Б12" secondPoint="379" showLabel="true" type="alongLine" typeLine="none"/>
+            <point angle="0" firstPoint="378" id="391" length="RadiusArc_А65_239 * (1 - cosD(0)) + #HT" lineColor="black" mx="1.32292" my="2.64583" name="Б13" secondPoint="379" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="380" id="392" length="RadiusArc_А65_239 * (1 - cosD(15)) + #HT" lineColor="black" mx="1.32292" my="2.64583" name="Б14" secondPoint="379" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="381" id="393" length="RadiusArc_А65_239 * (1 - cosD(30)) + #HT" lineColor="black" mx="1.32292" my="2.64583" name="Б15" secondPoint="379" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="382" id="394" length="RadiusArc_А65_239 * (1 - cosD(45)) + #HT" lineColor="black" mx="1.32292" my="2.64583" name="Б16" secondPoint="379" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="383" id="395" length="RadiusArc_А65_239 * (1 - cosD(60)) + #HT" lineColor="black" mx="1.32292" my="2.64583" name="Б17" secondPoint="379" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="384" id="396" length="RadiusArc_А65_239 * (1 - cosD(75)) + #HT" lineColor="black" mx="1.32292" my="2.64583" name="Б18" secondPoint="379" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="385" id="397" length="RadiusArc_А65_239 * (1 - cosD(90)) + #HT" lineColor="black" mx="1.32292" my="2.64583" name="Б19" secondPoint="379" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="386" id="398" length="RadiusArc_А65_239 * (1 - cosD(105)) + #HT" lineColor="black" mx="1.32292" my="2.64583" name="Б20" secondPoint="379" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="387" id="399" length="RadiusArc_А65_239 * (1 - cosD(120)) + #HT" lineColor="black" mx="1.32292" my="2.64583" name="Б21" secondPoint="379" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="388" id="400" length="RadiusArc_А65_239 * (1 - cosD(135)) + #HT" lineColor="black" mx="1.32292" my="2.64583" name="Б22" secondPoint="379" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="389" id="401" length="RadiusArc_А65_239 * (1 - cosD(150)) + #HT" lineColor="black" mx="1.32292" my="2.64583" name="Б23" secondPoint="379" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="390" id="402" length="RadiusArc_А65_239 * (1 - cosD(165)) + #HT" lineColor="black" mx="1.32292" my="2.64583" name="Б24" secondPoint="379" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="379" id="403" length="-(RadiusArc_А65_239 * (1 - cosD(180)) + #HT)" lineColor="black" mx="1.32292" my="2.64583" name="Б25" secondPoint="378" showLabel="true" type="normal" typeLine="hair"/>
+            <point firstPoint="378" id="404" length="RadiusArc_А65_239 * (1 + #YKOtn^2 + 2 * #YKOtn * cosD(0))^0.5" lineColor="black" mx="1.32292" my="2.64583" name="Б26" secondPoint="391" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="380" id="405" length="RadiusArc_А65_239 * (1 + #YKOtn^2 + 2 * #YKOtn * cosD(15))^0.5" lineColor="black" mx="1.32292" my="2.64583" name="Б27" secondPoint="392" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="381" id="406" length="RadiusArc_А65_239 * (1 + #YKOtn^2 + 2 * #YKOtn * cosD(30))^0.5" lineColor="black" mx="1.32292" my="2.64583" name="Б28" secondPoint="393" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="382" id="407" length="RadiusArc_А65_239 * (1 + #YKOtn^2 + 2 * #YKOtn * cosD(45))^0.5" lineColor="black" mx="1.32292" my="2.64583" name="Б29" secondPoint="394" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="383" id="408" length="RadiusArc_А65_239 * (1 + #YKOtn^2 + 2 * #YKOtn * cosD(60))^0.5" lineColor="black" mx="1.32292" my="2.64583" name="Б30" secondPoint="395" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="384" id="409" length="RadiusArc_А65_239 * (1 + #YKOtn^2 + 2 * #YKOtn * cosD(75))^0.5" lineColor="black" mx="1.32292" my="2.64583" name="Б31" secondPoint="396" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="385" id="410" length="RadiusArc_А65_239 * (1 + #YKOtn^2 + 2 * #YKOtn * cosD(90))^0.5" lineColor="black" mx="1.32292" my="2.64583" name="Б32" secondPoint="397" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="386" id="411" length="RadiusArc_А65_239 * (1 + #YKOtn^2 + 2 * #YKOtn * cosD(105))^0.5" lineColor="black" mx="1.32292" my="2.64583" name="Б33" secondPoint="398" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="387" id="412" length="RadiusArc_А65_239 * (1 + #YKOtn^2 + 2 * #YKOtn * cosD(120))^0.5" lineColor="black" mx="1.32292" my="2.64583" name="Б34" secondPoint="399" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="388" id="413" length="RadiusArc_А65_239 * (1 + #YKOtn^2 + 2 * #YKOtn * cosD(135))^0.5" lineColor="black" mx="1.32292" my="2.64583" name="Б35" secondPoint="400" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="389" id="414" length="RadiusArc_А65_239 * (1 + #YKOtn^2 + 2 * #YKOtn * cosD(150))^0.5" lineColor="black" mx="1.32292" my="2.64583" name="Б36" secondPoint="401" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="390" id="415" length="RadiusArc_А65_239 * (1 + #YKOtn^2 + 2 * #YKOtn * cosD(165))^0.5" lineColor="black" mx="1.32292" my="2.64583" name="Б37" secondPoint="402" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="379" id="416" length="RadiusArc_А65_239 * (1 + #YKOtn^2 + 2 * #YKOtn * cosD(180))^0.5" lineColor="black" mx="1.32292" my="2.64583" name="Б38" secondPoint="403" showLabel="true" type="alongLine" typeLine="none"/>
+            <operation axisType="1" center="379" id="417" suffix="б1" type="flippingByAxis">
+                <source>
+                    <item idObject="402"/>
+                    <item idObject="415"/>
+                    <item idObject="414"/>
+                    <item idObject="401"/>
+                    <item idObject="390"/>
+                    <item idObject="389"/>
+                    <item idObject="413"/>
+                    <item idObject="400"/>
+                    <item idObject="388"/>
+                    <item idObject="387"/>
+                    <item idObject="412"/>
+                    <item idObject="399"/>
+                    <item idObject="411"/>
+                    <item idObject="398"/>
+                    <item idObject="386"/>
+                    <item idObject="385"/>
+                    <item idObject="410"/>
+                    <item idObject="397"/>
+                    <item idObject="409"/>
+                    <item idObject="396"/>
+                    <item idObject="384"/>
+                    <item idObject="408"/>
+                    <item idObject="395"/>
+                    <item idObject="383"/>
+                    <item idObject="382"/>
+                    <item idObject="407"/>
+                    <item idObject="394"/>
+                    <item idObject="381"/>
+                    <item idObject="406"/>
+                    <item idObject="393"/>
+                    <item idObject="405"/>
+                    <item idObject="392"/>
+                    <item idObject="380"/>
+                    <item idObject="378"/>
+                    <item idObject="404"/>
+                    <item idObject="391"/>
+                </source>
+                <destination>
+                    <item idObject="418" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="419" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="420" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="421" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="422" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="423" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="424" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="425" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="426" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="427" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="428" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="429" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="430" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="431" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="432" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="433" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="434" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="435" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="436" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="437" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="438" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="439" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="440" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="441" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="442" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="443" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="444" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="445" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="446" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="447" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="448" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="449" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="450" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="451" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="452" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="453" mx="1.32292" my="2.64583" showLabel="true"/>
+                </destination>
+            </operation>
+        </calculation>
+        <modeling>
+            <point id="454" idObject="378" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="455" idObject="391" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="456" idObject="392" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="457" idObject="393" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="458" idObject="394" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="459" idObject="395" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="460" idObject="396" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="461" idObject="397" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="462" idObject="398" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="463" idObject="399" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="464" idObject="400" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="465" idObject="401" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="466" idObject="402" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="467" idObject="403" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="468" idObject="418" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="469" idObject="421" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="470" idObject="425" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="471" idObject="429" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="472" idObject="431" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="473" idObject="435" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="474" idObject="437" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="475" idObject="440" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="476" idObject="444" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="477" idObject="447" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="478" idObject="449" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="479" idObject="453" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="480" idObject="451" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="482" idObject="404" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="483" idObject="405" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="484" idObject="406" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="485" idObject="407" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="486" idObject="408" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="487" idObject="409" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="488" idObject="410" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="489" idObject="411" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="490" idObject="412" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="491" idObject="413" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="492" idObject="414" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="493" idObject="416" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="494" idObject="419" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="495" idObject="420" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="496" idObject="424" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="497" idObject="428" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="498" idObject="430" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="499" idObject="434" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="500" idObject="436" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="501" idObject="439" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="502" idObject="443" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="503" idObject="446" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="504" idObject="448" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="505" idObject="452" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <path cut="false" firstToCountour="false" id="506" inUse="false" lastToCountour="false" name="Безымянный контур" type="2" typeLine="hair" visible="1">
+                <nodes>
+                    <node idObject="482" type="NodePoint"/>
+                    <node idObject="483" type="NodePoint"/>
+                    <node idObject="484" type="NodePoint"/>
+                    <node idObject="485" type="NodePoint"/>
+                    <node idObject="486" type="NodePoint"/>
+                    <node idObject="487" type="NodePoint"/>
+                    <node idObject="488" type="NodePoint"/>
+                    <node idObject="489" type="NodePoint"/>
+                    <node idObject="490" type="NodePoint"/>
+                    <node idObject="491" type="NodePoint"/>
+                    <node idObject="492" type="NodePoint"/>
+                    <node idObject="493" type="NodePoint"/>
+                    <node idObject="494" type="NodePoint"/>
+                    <node idObject="495" type="NodePoint"/>
+                    <node idObject="496" type="NodePoint"/>
+                    <node idObject="497" type="NodePoint"/>
+                    <node idObject="498" type="NodePoint"/>
+                    <node idObject="499" type="NodePoint"/>
+                    <node idObject="500" type="NodePoint"/>
+                    <node idObject="501" type="NodePoint"/>
+                    <node idObject="502" type="NodePoint"/>
+                    <node idObject="503" type="NodePoint"/>
+                    <node idObject="504" type="NodePoint"/>
+                    <node idObject="505" type="NodePoint"/>
+                </nodes>
+            </path>
+            <point id="507" idObject="379" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="508" idObject="403" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <path cut="false" firstToCountour="false" id="509" inUse="false" lastToCountour="false" name="Безымянный контур" type="2" typeLine="hair" visible="1">
+                <nodes>
+                    <node idObject="507" type="NodePoint"/>
+                    <node idObject="508" type="NodePoint"/>
+                </nodes>
+            </path>
+        </modeling>
+        <details>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="481" inLayout="false" mx="5.95229" my="5.95229" name="Тубус основной" seamAllowance="true" uuid="{155c7472-382e-4f05-9a21-36ecd43df7ec}" version="2" width="#ШШ">
+                <data annotation="" foldPosition="" fontSize="0" height="50" letter="" mx="27105.7" my="-980.73" onFold="false" orientation="" quantity="10" rotation="0" rotationWay="" tilt="" visible="true" width="100">
+                    <line alignment="4" bold="false" italic="false" sfIncrement="2" text="%pName%"/>
+                    <line alignment="4" bold="false" italic="false" sfIncrement="1" text="%pQuantity% шт"/>
+                </data>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="454" type="NodePoint"/>
+                    <node idObject="455" type="NodePoint"/>
+                    <node idObject="456" type="NodePoint"/>
+                    <node idObject="457" type="NodePoint"/>
+                    <node idObject="458" type="NodePoint"/>
+                    <node idObject="459" type="NodePoint"/>
+                    <node idObject="460" type="NodePoint"/>
+                    <node idObject="461" type="NodePoint"/>
+                    <node idObject="462" type="NodePoint"/>
+                    <node idObject="463" type="NodePoint"/>
+                    <node idObject="464" type="NodePoint"/>
+                    <node idObject="465" type="NodePoint"/>
+                    <node idObject="466" type="NodePoint"/>
+                    <node idObject="467" type="NodePoint"/>
+                    <node idObject="468" type="NodePoint"/>
+                    <node idObject="469" type="NodePoint"/>
+                    <node idObject="470" type="NodePoint"/>
+                    <node idObject="471" type="NodePoint"/>
+                    <node idObject="472" type="NodePoint"/>
+                    <node idObject="473" type="NodePoint"/>
+                    <node idObject="474" type="NodePoint"/>
+                    <node idObject="475" type="NodePoint"/>
+                    <node idObject="476" type="NodePoint"/>
+                    <node idObject="477" type="NodePoint"/>
+                    <node idObject="478" type="NodePoint"/>
+                    <node idObject="479" type="NodePoint"/>
+                    <node idObject="480" type="NodePoint"/>
+                </nodes>
+                <iPaths>
+                    <record path="506"/>
+                    <record path="509"/>
+                </iPaths>
+            </detail>
+        </details>
+        <groups/>
+    </draw>
+    <draw name="Тубус дежурного">
+        <calculation>
+            <point id="510" mx="1.32292" my="2.64583" name="В" showLabel="true" type="single" x="9271.57" y="10.5833"/>
+            <point angle="0" basePoint="510" id="511" length="degTorad(180) * RadiusArc_А69_246" lineColor="black" mx="1.32292" my="2.64583" name="В180" showLabel="true" type="endLine" typeLine="hair"/>
+            <point firstPoint="510" id="512" length="degTorad(15) * RadiusArc_А69_246" lineColor="black" mx="1.32292" my="2.64583" name="В15" secondPoint="511" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="510" id="513" length="degTorad(30) * RadiusArc_А69_246" lineColor="black" mx="1.32292" my="2.64583" name="В30" secondPoint="511" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="510" id="514" length="degTorad(45) * RadiusArc_А69_246" lineColor="black" mx="1.32292" my="2.64583" name="В45" secondPoint="511" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="510" id="515" length="degTorad(60) * RadiusArc_А69_246" lineColor="black" mx="1.32292" my="2.64583" name="В60" secondPoint="511" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="510" id="516" length="degTorad(75) * RadiusArc_А69_246" lineColor="black" mx="1.32292" my="2.64583" name="В75" secondPoint="511" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="510" id="517" length="degTorad(90) * RadiusArc_А69_246" lineColor="black" mx="1.32292" my="2.64583" name="В90" secondPoint="511" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="510" id="518" length="degTorad(105) * RadiusArc_А69_246" lineColor="black" mx="1.32292" my="2.64583" name="В105" secondPoint="511" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="510" id="519" length="degTorad(120) * RadiusArc_А69_246" lineColor="black" mx="1.32292" my="2.64583" name="В120" secondPoint="511" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="510" id="520" length="degTorad(135) * RadiusArc_А69_246" lineColor="black" mx="1.32292" my="2.64583" name="В135" secondPoint="511" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="510" id="521" length="degTorad(150) * RadiusArc_А69_246" lineColor="black" mx="1.32292" my="2.64583" name="В150" secondPoint="511" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="510" id="522" length="degTorad(165) * RadiusArc_А69_246" lineColor="black" mx="1.32292" my="2.64583" name="В165" secondPoint="511" showLabel="true" type="alongLine" typeLine="none"/>
+            <point angle="0" firstPoint="510" id="523" length="RadiusArc_А69_246 * (1 - cosD(0)) + #HT" lineColor="black" mx="1.32292" my="2.64583" name="В1" secondPoint="511" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="512" id="524" length="RadiusArc_А69_246 * (1 - cosD(15)) + #HT" lineColor="black" mx="1.32292" my="2.64583" name="В2" secondPoint="511" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="513" id="525" length="RadiusArc_А69_246 * (1 - cosD(30)) + #HT" lineColor="black" mx="1.32292" my="2.64583" name="В3" secondPoint="511" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="514" id="526" length="RadiusArc_А69_246 * (1 - cosD(45)) + #HT" lineColor="black" mx="1.32292" my="2.64583" name="В4" secondPoint="511" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="515" id="527" length="RadiusArc_А69_246 * (1 - cosD(60)) + #HT" lineColor="black" mx="1.32292" my="2.64583" name="В5" secondPoint="511" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="516" id="528" length="RadiusArc_А69_246 * (1 - cosD(75)) + #HT" lineColor="black" mx="1.32292" my="2.64583" name="В6" secondPoint="511" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="517" id="529" length="RadiusArc_А69_246 * (1 - cosD(90)) + #HT" lineColor="black" mx="1.32292" my="2.64583" name="В7" secondPoint="511" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="518" id="530" length="RadiusArc_А69_246 * (1 - cosD(105)) + #HT" lineColor="black" mx="1.32292" my="2.64583" name="В8" secondPoint="511" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="519" id="531" length="RadiusArc_А69_246 * (1 - cosD(120)) + #HT" lineColor="black" mx="1.32292" my="2.64583" name="В9" secondPoint="511" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="520" id="532" length="RadiusArc_А69_246 * (1 - cosD(135)) + #HT" lineColor="black" mx="1.32292" my="2.64583" name="В10" secondPoint="511" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="521" id="533" length="RadiusArc_А69_246 * (1 - cosD(150)) + #HT" lineColor="black" mx="1.32292" my="2.64583" name="В11" secondPoint="511" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="522" id="534" length="RadiusArc_А69_246 * (1 - cosD(165)) + #HT" lineColor="black" mx="1.32292" my="2.64583" name="В12" secondPoint="511" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="511" id="535" length="-(RadiusArc_А69_246 * (1 - cosD(180)) + #HT)" lineColor="black" mx="1.32292" my="2.64583" name="В13" secondPoint="510" showLabel="true" type="normal" typeLine="hair"/>
+            <point firstPoint="510" id="536" length="RadiusArc_А69_246 * (1 + #YKOtn^2 + 2 * #YKOtn * cosD(0))^0.5" lineColor="black" mx="1.32292" my="2.64583" name="В14" secondPoint="523" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="512" id="537" length="RadiusArc_А69_246 * (1 + #YKOtn^2 + 2 * #YKOtn * cosD(15))^0.5" lineColor="black" mx="1.32292" my="2.64583" name="В16" secondPoint="524" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="513" id="538" length="RadiusArc_А69_246 * (1 + #YKOtn^2 + 2 * #YKOtn * cosD(30))^0.5" lineColor="black" mx="1.32292" my="2.64583" name="В17" secondPoint="525" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="514" id="539" length="RadiusArc_А69_246 * (1 + #YKOtn^2 + 2 * #YKOtn * cosD(45))^0.5" lineColor="black" mx="1.32292" my="2.64583" name="В18" secondPoint="526" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="515" id="540" length="RadiusArc_А69_246 * (1 + #YKOtn^2 + 2 * #YKOtn * cosD(60))^0.5" lineColor="black" mx="1.32292" my="2.64583" name="В19" secondPoint="527" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="516" id="541" length="RadiusArc_А69_246 * (1 + #YKOtn^2 + 2 * #YKOtn * cosD(75))^0.5" lineColor="black" mx="1.32292" my="2.64583" name="В20" secondPoint="528" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="517" id="542" length="RadiusArc_А69_246 * (1 + #YKOtn^2 + 2 * #YKOtn * cosD(90))^0.5" lineColor="black" mx="1.32292" my="2.64583" name="В21" secondPoint="529" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="518" id="543" length="RadiusArc_А69_246 * (1 + #YKOtn^2 + 2 * #YKOtn * cosD(105))^0.5" lineColor="black" mx="1.32292" my="2.64583" name="В22" secondPoint="530" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="519" id="544" length="RadiusArc_А69_246 * (1 + #YKOtn^2 + 2 * #YKOtn * cosD(120))^0.5" lineColor="black" mx="1.32292" my="2.64583" name="В23" secondPoint="531" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="520" id="545" length="RadiusArc_А69_246 * (1 + #YKOtn^2 + 2 * #YKOtn * cosD(135))^0.5" lineColor="black" mx="1.32292" my="2.64583" name="В24" secondPoint="532" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="521" id="546" length="RadiusArc_А69_246 * (1 + #YKOtn^2 + 2 * #YKOtn * cosD(150))^0.5" lineColor="black" mx="1.32292" my="2.64583" name="В25" secondPoint="533" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="522" id="547" length="RadiusArc_А69_246 * (1 + #YKOtn^2 + 2 * #YKOtn * cosD(165))^0.5" lineColor="black" mx="1.32292" my="2.64583" name="В26" secondPoint="534" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="511" id="548" length="RadiusArc_А69_246 * (1 + #YKOtn^2 + 2 * #YKOtn * cosD(180))^0.5" lineColor="black" mx="1.32292" my="2.64583" name="В27" secondPoint="535" showLabel="true" type="alongLine" typeLine="none"/>
+            <operation axisType="1" center="511" id="549" suffix="в1" type="flippingByAxis">
+                <source>
+                    <item idObject="522"/>
+                    <item idObject="521"/>
+                    <item idObject="545"/>
+                    <item idObject="520"/>
+                    <item idObject="547"/>
+                    <item idObject="546"/>
+                    <item idObject="532"/>
+                    <item idObject="533"/>
+                    <item idObject="544"/>
+                    <item idObject="531"/>
+                    <item idObject="519"/>
+                    <item idObject="530"/>
+                    <item idObject="543"/>
+                    <item idObject="518"/>
+                    <item idObject="542"/>
+                    <item idObject="517"/>
+                    <item idObject="529"/>
+                    <item idObject="541"/>
+                    <item idObject="528"/>
+                    <item idObject="516"/>
+                    <item idObject="527"/>
+                    <item idObject="540"/>
+                    <item idObject="515"/>
+                    <item idObject="539"/>
+                    <item idObject="526"/>
+                    <item idObject="514"/>
+                    <item idObject="538"/>
+                    <item idObject="513"/>
+                    <item idObject="525"/>
+                    <item idObject="537"/>
+                    <item idObject="512"/>
+                    <item idObject="524"/>
+                    <item idObject="510"/>
+                    <item idObject="536"/>
+                    <item idObject="523"/>
+                    <item idObject="534"/>
+                </source>
+                <destination>
+                    <item idObject="550" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="551" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="552" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="553" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="554" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="555" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="556" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="557" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="558" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="559" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="560" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="561" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="562" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="563" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="564" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="565" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="566" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="567" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="568" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="569" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="570" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="571" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="572" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="573" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="574" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="575" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="576" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="577" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="578" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="579" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="580" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="581" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="582" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="583" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="584" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="585" mx="1.32292" my="2.64583" showLabel="true"/>
+                </destination>
+            </operation>
+        </calculation>
+        <modeling>
+            <point id="586" idObject="510" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="587" idObject="523" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="588" idObject="524" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="589" idObject="525" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="590" idObject="526" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="591" idObject="527" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="592" idObject="528" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="593" idObject="529" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="594" idObject="530" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="595" idObject="531" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="596" idObject="532" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="597" idObject="533" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="598" idObject="534" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="599" idObject="535" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="600" idObject="585" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="601" idObject="557" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="602" idObject="556" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="603" idObject="559" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="604" idObject="561" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="605" idObject="566" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="606" idObject="568" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="607" idObject="570" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="608" idObject="574" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="609" idObject="578" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="610" idObject="581" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="611" idObject="584" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="612" idObject="582" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="614" idObject="536" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="615" idObject="537" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="616" idObject="538" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="617" idObject="539" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="618" idObject="540" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="619" idObject="541" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="620" idObject="542" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="621" idObject="543" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="622" idObject="544" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="623" idObject="545" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="624" idObject="546" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="625" idObject="547" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="626" idObject="548" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="627" idObject="554" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="628" idObject="555" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="629" idObject="552" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="630" idObject="558" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="631" idObject="562" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="632" idObject="564" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="633" idObject="567" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="634" idObject="571" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="635" idObject="573" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="636" idObject="576" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="637" idObject="579" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="638" idObject="583" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <path cut="false" firstToCountour="false" id="639" inUse="false" lastToCountour="false" name="Безымянный контур" type="2" typeLine="hair" visible="1">
+                <nodes>
+                    <node idObject="614" type="NodePoint"/>
+                    <node idObject="615" type="NodePoint"/>
+                    <node idObject="616" type="NodePoint"/>
+                    <node idObject="617" type="NodePoint"/>
+                    <node idObject="618" type="NodePoint"/>
+                    <node idObject="619" type="NodePoint"/>
+                    <node idObject="620" type="NodePoint"/>
+                    <node idObject="621" type="NodePoint"/>
+                    <node idObject="622" type="NodePoint"/>
+                    <node idObject="623" type="NodePoint"/>
+                    <node idObject="624" type="NodePoint"/>
+                    <node idObject="625" type="NodePoint"/>
+                    <node idObject="626" type="NodePoint"/>
+                    <node idObject="627" type="NodePoint"/>
+                    <node idObject="628" type="NodePoint"/>
+                    <node idObject="629" type="NodePoint"/>
+                    <node idObject="630" type="NodePoint"/>
+                    <node idObject="631" type="NodePoint"/>
+                    <node idObject="632" type="NodePoint"/>
+                    <node idObject="633" type="NodePoint"/>
+                    <node idObject="634" type="NodePoint"/>
+                    <node idObject="635" type="NodePoint"/>
+                    <node idObject="636" type="NodePoint"/>
+                    <node idObject="637" type="NodePoint"/>
+                    <node idObject="638" type="NodePoint"/>
+                </nodes>
+            </path>
+            <point id="640" idObject="511" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="641" idObject="535" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <path cut="false" firstToCountour="false" id="642" inUse="false" lastToCountour="false" name="Безымянный контур" type="2" typeLine="hair" visible="1">
+                <nodes>
+                    <node idObject="640" type="NodePoint"/>
+                    <node idObject="641" type="NodePoint"/>
+                </nodes>
+            </path>
+        </modeling>
+        <details>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="613" inLayout="false" mx="-2979.12" my="1047.6" name="Тубус дежурного" seamAllowance="true" uuid="{89eee5a0-9633-48a0-8143-516b6562cc00}" version="2" width="#ШШ">
+                <data annotation="" foldPosition="" fontSize="0" height="50" letter="" mx="38393.6" my="-958.233" onFold="false" orientation="" quantity="10" rotation="0" rotationWay="" tilt="" visible="true" width="100">
+                    <line alignment="4" bold="false" italic="false" sfIncrement="2" text="%pName%"/>
+                    <line alignment="4" bold="false" italic="false" sfIncrement="1" text="%pQuantity% шт"/>
+                </data>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="586" type="NodePoint"/>
+                    <node idObject="587" type="NodePoint"/>
+                    <node idObject="588" type="NodePoint"/>
+                    <node idObject="589" type="NodePoint"/>
+                    <node idObject="590" type="NodePoint"/>
+                    <node idObject="591" type="NodePoint"/>
+                    <node idObject="592" type="NodePoint"/>
+                    <node idObject="593" type="NodePoint"/>
+                    <node idObject="594" type="NodePoint"/>
+                    <node idObject="595" type="NodePoint"/>
+                    <node idObject="596" type="NodePoint"/>
+                    <node idObject="597" type="NodePoint"/>
+                    <node idObject="598" type="NodePoint"/>
+                    <node idObject="599" type="NodePoint"/>
+                    <node idObject="600" type="NodePoint"/>
+                    <node idObject="601" type="NodePoint"/>
+                    <node idObject="602" type="NodePoint"/>
+                    <node idObject="603" type="NodePoint"/>
+                    <node idObject="604" type="NodePoint"/>
+                    <node idObject="605" type="NodePoint"/>
+                    <node idObject="606" type="NodePoint"/>
+                    <node idObject="607" type="NodePoint"/>
+                    <node idObject="608" type="NodePoint"/>
+                    <node idObject="609" type="NodePoint"/>
+                    <node idObject="610" type="NodePoint"/>
+                    <node idObject="611" type="NodePoint"/>
+                    <node idObject="612" type="NodePoint"/>
+                </nodes>
+                <iPaths>
+                    <record path="639"/>
+                    <record path="642"/>
+                </iPaths>
+            </detail>
+        </details>
+        <groups/>
+    </draw>
+</pattern>

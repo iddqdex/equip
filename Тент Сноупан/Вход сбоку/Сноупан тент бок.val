@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern>
+    <!--Pattern created with Valentina v0.7.50.0 (https://smart-pattern.com.ua/).-->
+    <version>0.9.0</version>
+    <unit>mm</unit>
+    <description/>
+    <notes/>
+    <patternLabel/>
+    <measurements/>
+    <increments>
+        <increment description="Полуширина тента" formula="200" name="#W"/>
+        <increment description="ширина стропы" formula="25" name="#WS"/>
+        <increment description="Приауск на швы" formula="15" name="#D"/>
+        <increment description="Высота кармана под ленту" formula="140" name="#HD"/>
+        <increment description="Высота тубуса" formula="200" name="#HT"/>
+    </increments>
+    <previewCalculations/>
+    <draw name="бок">
+        <calculation>
+            <point id="1" mx="13.3966" my="7.5777" name="А" showLabel="true" type="single" x="0" y="0"/>
+            <point angle="0" basePoint="1" id="2" length="560" lineColor="black" mx="1.32292" my="2.64583" name="А1" showLabel="true" type="endLine" typeLine="hair"/>
+            <point angle="0" firstPoint="1" id="3" length="#W + #HD" lineColor="black" mx="1.32292" my="2.64583" name="А2" secondPoint="2" showLabel="true" type="normal" typeLine="hair"/>
+            <point firstPoint="1" id="4" length="#HD" lineColor="black" mx="1.32292" my="2.64583" name="А3" secondPoint="3" showLabel="true" type="alongLine" typeLine="none"/>
+            <point c1Center="4" c1Radius="40" c2Center="3" c2Radius="#W-20" crossPoint="2" id="6" mx="1.32292" my="2.64583" name="А5" showLabel="true" type="pointOfIntersectionCircles"/>
+            <point angle="0" firstPoint="4" id="7" length="#HD" lineColor="black" mx="1.32292" my="2.64583" name="А6" secondPoint="6" showLabel="true" type="normal" typeLine="hair"/>
+            <point firstPoint="2" id="8" mx="1.32292" my="2.64583" name="А7" secondPoint="4" showLabel="true" type="pointOfIntersection"/>
+            <point angle="0" firstPoint="6" id="11" length="-#HD" lineColor="black" mx="1.32292" my="2.64583" name="А10" secondPoint="4" showLabel="true" type="normal" typeLine="hair"/>
+            <point firstPoint="1" id="78" length="100-#WS/2" lineColor="black" mx="1.32292" my="2.64583" name="А11" secondPoint="2" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="78" id="79" length="#WS" lineColor="black" mx="1.32292" my="2.64583" name="А12" secondPoint="2" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="2" id="80" length="10" lineColor="black" mx="48.3306" my="-5.52286" name="А13" secondPoint="1" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="80" id="81" length="#WS" lineColor="black" mx="-32.7133" my="7.63781" name="А14" secondPoint="1" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="1" id="82" length="45+CurrentLength/2 - #WS/4" lineColor="black" mx="1.32292" my="2.64583" name="А15" secondPoint="2" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="82" id="83" length="#WS" lineColor="black" mx="1.32292" my="2.64583" name="А16" secondPoint="2" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="78" id="84" mx="1.32292" my="2.64583" name="А17" secondPoint="4" showLabel="true" type="pointOfIntersection"/>
+            <point firstPoint="79" id="85" mx="1.32292" my="2.64583" name="А18" secondPoint="4" showLabel="true" type="pointOfIntersection"/>
+            <point firstPoint="82" id="86" mx="1.32292" my="2.64583" name="А19" secondPoint="4" showLabel="true" type="pointOfIntersection"/>
+            <point firstPoint="83" id="87" mx="1.32292" my="2.64583" name="А20" secondPoint="4" showLabel="true" type="pointOfIntersection"/>
+            <point firstPoint="81" id="88" mx="-65.388" my="-33.6594" name="А21" secondPoint="4" showLabel="true" type="pointOfIntersection"/>
+            <point firstPoint="80" id="89" mx="-33.1671" my="-41.8281" name="А22" secondPoint="4" showLabel="true" type="pointOfIntersection"/>
+            <operation axisType="2" center="3" id="146" suffix="л" type="flippingByAxis">
+                <source>
+                    <item idObject="11"/>
+                    <item idObject="7"/>
+                    <item idObject="4"/>
+                    <item idObject="1"/>
+                    <item idObject="78"/>
+                    <item idObject="84"/>
+                    <item idObject="85"/>
+                    <item idObject="79"/>
+                    <item idObject="82"/>
+                    <item idObject="83"/>
+                    <item idObject="87"/>
+                    <item idObject="86"/>
+                    <item idObject="88"/>
+                    <item idObject="89"/>
+                    <item idObject="81"/>
+                    <item idObject="80"/>
+                    <item idObject="2"/>
+                    <item idObject="8"/>
+                    <item idObject="6"/>
+                </source>
+                <destination>
+                    <item idObject="147" mx="1.32292" my="2.64583"/>
+                    <item idObject="148" mx="1.32292" my="2.64583"/>
+                    <item idObject="149" mx="1.32292" my="2.64583"/>
+                    <item idObject="150" mx="13.3966" my="7.5777"/>
+                    <item idObject="151" mx="1.32292" my="2.64583"/>
+                    <item idObject="152" mx="1.32292" my="2.64583"/>
+                    <item idObject="153" mx="1.32292" my="2.64583"/>
+                    <item idObject="154" mx="1.32292" my="2.64583"/>
+                    <item idObject="155" mx="1.32292" my="2.64583"/>
+                    <item idObject="156" mx="1.32292" my="2.64583"/>
+                    <item idObject="157" mx="1.32292" my="2.64583"/>
+                    <item idObject="158" mx="1.32292" my="2.64583"/>
+                    <item idObject="159" mx="1.32292" my="2.64583"/>
+                    <item idObject="160" mx="14.0298" my="6.73017"/>
+                    <item idObject="161" mx="1.32292" my="2.64583"/>
+                    <item idObject="162" mx="13.1221" my="21.7061"/>
+                    <item idObject="163" mx="37.6282" my="3.55346"/>
+                    <item idObject="164" mx="-8.66103" my="23.0675"/>
+                    <item idObject="165" mx="1.32292" my="2.64583"/>
+                </destination>
+            </operation>
+            <point firstPoint="4" id="166" length="50" lineColor="black" mx="2.64583" my="3.96875" name="А4" secondPoint="3" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="2" id="168" mx="2.64583" my="3.96875" name="А9" secondPoint="166" showLabel="true" type="pointOfIntersection"/>
+            <point firstPoint="166" id="169" length="20+#HT" lineColor="black" mx="2.64583" my="3.96875" name="А23" secondPoint="3" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="166" id="170" length="-(20+#HT)" lineColor="black" mx="2.64583" my="3.96875" name="А24" secondPoint="3" showLabel="true" type="alongLine" typeLine="none"/>
+            <point firstPoint="2" id="171" mx="2.64583" my="3.96875" name="А25" secondPoint="169" showLabel="true" type="pointOfIntersection"/>
+            <point firstPoint="2" id="172" mx="2.64583" my="3.96875" name="А26" secondPoint="170" showLabel="true" type="pointOfIntersection"/>
+            <point firstPoint="2" id="287" mx="2.64583" my="3.96875" name="А27" secondPoint="3" showLabel="true" type="pointOfIntersection"/>
+            <point firstPoint="168" id="288" length="-sqrt(#W^2-(#W-50)^2)" lineColor="black" mx="2.64583" my="3.96875" name="А28" secondPoint="166" showLabel="true" type="alongLine" typeLine="none"/>
+            <arc aScale="0" angle1="-90" angle2="acosD(1-50/#W)-90" center="287" color="cornflowerblue" id="289" penStyle="hair" radius="#W" type="simple"/>
+            <point firstPoint="288" id="290" mx="2.64583" my="3.96875" name="А29" secondPoint="171" showLabel="true" type="pointOfIntersection"/>
+            <point basePoint="166" id="291" lineColor="black" mx="2.64583" my="3.96875" name="А8" p1Line="6" p2Line="3" showLabel="true" type="height" typeLine="hair"/>
+            <arc aScale="0" angle1="acosD(1-50/#W)-90" angle2="-90+radTodeg(255/#W) - acosD(1-10/#W)" center="287" color="black" id="304" penStyle="hair" radius="#W" type="simple"/>
+            <arc aScale="0" angle1="-90+radTodeg(255/#W) + acosD(1-10/#W)" angle2="-90+radTodeg(510/#W)" center="287" color="black" id="305" penStyle="hair" radius="#W" type="simple"/>
+            <point firstPoint="288" id="306" mx="2.64583" my="3.96875" name="А30" secondPoint="170" showLabel="true" type="pointOfIntersection"/>
+            <point angle="-90+radTodeg(255/#W)" basePoint="287" id="365" length="#W-10" lineColor="black" mx="2.64583" my="3.96875" name="А31" showLabel="true" type="endLine" typeLine="hair"/>
+        </calculation>
+        <modeling>
+            <point id="292" idObject="4" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="293" idObject="7" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="294" idObject="11" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="295" idObject="6" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="296" idObject="291" inUse="false" mx="2.64583" my="3.96875" showLabel="true" type="modeling"/>
+            <point id="297" idObject="166" inUse="false" mx="2.64583" my="3.96875" showLabel="true" type="modeling"/>
+            <point id="298" idObject="169" inUse="false" mx="2.64583" my="3.96875" showLabel="true" type="modeling"/>
+            <point id="299" idObject="290" inUse="false" mx="2.64583" my="3.96875" showLabel="true" type="modeling"/>
+            <arc id="300" idObject="289" inUse="false" type="modeling"/>
+            <point id="301" idObject="2" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="302" idObject="1" inUse="false" mx="13.3966" my="7.5777" showLabel="true" type="modeling"/>
+            <point id="307" idObject="170" inUse="false" mx="2.64583" my="3.96875" showLabel="true" type="modeling"/>
+            <point id="308" idObject="166" inUse="false" mx="2.64583" my="3.96875" showLabel="true" type="modeling"/>
+            <point id="309" idObject="291" inUse="false" mx="2.64583" my="3.96875" showLabel="true" type="modeling"/>
+            <point id="310" idObject="3" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="311" idObject="165" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="312" idObject="147" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="313" idObject="148" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="314" idObject="149" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="315" idObject="150" inUse="false" mx="13.3966" my="7.5777" showLabel="true" type="modeling"/>
+            <point id="316" idObject="163" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="317" idObject="287" inUse="false" mx="2.64583" my="3.96875" showLabel="true" type="modeling"/>
+            <arc id="318" idObject="305" inUse="false" type="modeling"/>
+            <arc id="319" idObject="304" inUse="false" type="modeling"/>
+            <point id="320" idObject="306" inUse="false" mx="2.64583" my="3.96875" showLabel="true" type="modeling"/>
+            <point id="322" idObject="6" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="323" idObject="4" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="324" idObject="8" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <path cut="false" firstToCountour="false" id="325" inUse="false" lastToCountour="false" name="Низ" type="2" typeLine="hair" visible="1">
+                <nodes>
+                    <node idObject="322" type="NodePoint"/>
+                    <node idObject="323" type="NodePoint"/>
+                    <node idObject="324" type="NodePoint"/>
+                </nodes>
+            </path>
+            <point id="326" idObject="288" inUse="false" mx="2.64583" my="3.96875" showLabel="true" type="modeling"/>
+            <point id="327" idObject="166" inUse="false" mx="2.64583" my="3.96875" showLabel="true" type="modeling"/>
+            <path cut="false" firstToCountour="false" id="328" inUse="false" lastToCountour="false" name="тубус" type="2" typeLine="hair" visible="1">
+                <nodes>
+                    <node idObject="326" type="NodePoint"/>
+                    <node idObject="327" type="NodePoint"/>
+                </nodes>
+            </path>
+            <point id="329" idObject="78" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="330" idObject="84" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="331" idObject="85" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="332" idObject="79" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="333" idObject="82" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="334" idObject="86" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="335" idObject="87" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="336" idObject="83" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="337" idObject="81" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="338" idObject="88" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="339" idObject="89" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="340" idObject="80" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <path cut="false" firstToCountour="false" id="341" inUse="false" lastToCountour="false" name="Стропа" type="2" typeLine="hair" visible="1">
+                <nodes>
+                    <node idObject="329" type="NodePoint"/>
+                    <node idObject="330" type="NodePoint"/>
+                    <node idObject="331" type="NodePoint"/>
+                    <node idObject="332" type="NodePoint"/>
+                    <node idObject="333" type="NodePoint"/>
+                    <node idObject="334" type="NodePoint"/>
+                    <node idObject="335" type="NodePoint"/>
+                    <node idObject="336" type="NodePoint"/>
+                    <node idObject="337" type="NodePoint"/>
+                    <node idObject="338" type="NodePoint"/>
+                    <node idObject="339" type="NodePoint"/>
+                    <node idObject="340" type="NodePoint"/>
+                </nodes>
+            </path>
+            <point id="342" idObject="165" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="343" idObject="149" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="344" idObject="164" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <path cut="false" firstToCountour="false" id="345" inUse="false" lastToCountour="false" name="низ" type="2" typeLine="hair" visible="1">
+                <nodes>
+                    <node idObject="342" type="NodePoint"/>
+                    <node idObject="343" type="NodePoint"/>
+                    <node idObject="344" type="NodePoint"/>
+                </nodes>
+            </path>
+            <point id="346" idObject="166" inUse="false" mx="2.64583" my="3.96875" showLabel="true" type="modeling"/>
+            <point id="347" idObject="288" inUse="false" mx="2.64583" my="3.96875" showLabel="true" type="modeling"/>
+            <path cut="false" firstToCountour="false" id="348" inUse="false" lastToCountour="false" name="тубус" type="2" typeLine="hair" visible="1">
+                <nodes>
+                    <node idObject="346" type="NodePoint"/>
+                    <node idObject="347" type="NodePoint"/>
+                </nodes>
+            </path>
+            <point id="349" idObject="151" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="350" idObject="152" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="351" idObject="153" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="352" idObject="154" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="353" idObject="155" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="354" idObject="158" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="355" idObject="157" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="356" idObject="156" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="357" idObject="161" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="358" idObject="159" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="359" idObject="160" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="360" idObject="162" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <path cut="false" firstToCountour="false" id="361" inUse="false" lastToCountour="false" name="стропа" type="2" typeLine="hair" visible="1">
+                <nodes>
+                    <node idObject="349" type="NodePoint"/>
+                    <node idObject="350" type="NodePoint"/>
+                    <node idObject="351" type="NodePoint"/>
+                    <node idObject="352" type="NodePoint"/>
+                    <node idObject="353" type="NodePoint"/>
+                    <node idObject="354" type="NodePoint"/>
+                    <node idObject="355" type="NodePoint"/>
+                    <node idObject="356" type="NodePoint"/>
+                    <node idObject="357" type="NodePoint"/>
+                    <node idObject="358" type="NodePoint"/>
+                    <node idObject="359" type="NodePoint"/>
+                    <node idObject="360" type="NodePoint"/>
+                </nodes>
+            </path>
+            <point id="366" idObject="3" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="367" idObject="287" inUse="false" mx="2.64583" my="3.96875" showLabel="true" type="modeling"/>
+            <point id="368" idObject="365" inUse="false" mx="2.64583" my="3.96875" showLabel="true" type="modeling"/>
+            <path cut="false" firstToCountour="false" id="369" inUse="false" lastToCountour="false" name="Середина" type="2" typeLine="hair" visible="1">
+                <nodes>
+                    <node idObject="366" type="NodePoint"/>
+                    <node idObject="367" type="NodePoint"/>
+                    <node idObject="368" type="NodePoint"/>
+                </nodes>
+            </path>
+            <point id="370" idObject="4" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="371" idObject="166" inUse="false" mx="2.64583" my="3.96875" showLabel="true" type="modeling"/>
+            <path cut="false" firstToCountour="false" id="372" inUse="false" lastToCountour="false" name="зад" type="2" typeLine="hair" visible="1">
+                <nodes>
+                    <node idObject="370" type="NodePoint"/>
+                    <node idObject="371" type="NodePoint"/>
+                </nodes>
+            </path>
+            <point id="373" idObject="166" inUse="false" mx="2.64583" my="3.96875" showLabel="true" type="modeling"/>
+            <point id="374" idObject="149" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <path cut="false" firstToCountour="false" id="375" inUse="false" lastToCountour="false" name="зад" type="2" typeLine="hair" visible="1">
+                <nodes>
+                    <node idObject="373" type="NodePoint"/>
+                    <node idObject="374" type="NodePoint"/>
+                </nodes>
+            </path>
+        </modeling>
+        <details>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="303" mx="46.4839" my="-142.333" name="Борт правый" priority="4" seamAllowance="true" uuid="{70109485-9b6a-4a10-a11b-5cd9f34d5317}" version="2" width="#D">
+                <data annotation="" foldPosition="" fontSize="0" height="100" letter="" mx="1025.7" my="-855.198" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="true" width="100">
+                    <line alignment="4" bold="false" italic="false" sfIncrement="2" text="%pName%"/>
+                </data>
+                <patternInfo fontSize="0" height="100" mx="0" my="0" rotation="0" visible="false" width="100"/>
+                <grainline arrows="0" length="100" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="292" type="NodePoint"/>
+                    <node after="0" idObject="293" type="NodePoint"/>
+                    <node before="0" idObject="294" type="NodePoint"/>
+                    <node idObject="295" type="NodePoint"/>
+                    <node idObject="296" type="NodePoint"/>
+                    <node idObject="297" type="NodePoint"/>
+                    <node after="0" idObject="298" type="NodePoint"/>
+                    <node before="0" idObject="299" type="NodePoint"/>
+                    <node idObject="300" reverse="1" type="NodeArc"/>
+                    <node after="0" idObject="301" type="NodePoint"/>
+                    <node before="0" idObject="302" type="NodePoint"/>
+                </nodes>
+                <iPaths>
+                    <record path="325"/>
+                    <record path="328"/>
+                    <record path="341"/>
+                    <record path="372"/>
+                </iPaths>
+            </detail>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="321" mx="71.9015" my="-638.886" name="Борт левый" priority="5" seamAllowance="true" uuid="{20f60cda-d202-4caf-b4ed-dbce2f83b73d}" version="2" width="#D">
+                <data annotation="" foldPosition="" fontSize="0" height="100" letter="" mx="850.949" my="-224.236" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="true" width="100">
+                    <line alignment="4" bold="false" italic="false" sfIncrement="2" text="%pName%"/>
+                </data>
+                <patternInfo fontSize="0" height="100" mx="0" my="0" rotation="0" visible="false" width="100"/>
+                <grainline arrows="0" length="100" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node before="0" idObject="307" type="NodePoint"/>
+                    <node idObject="308" type="NodePoint"/>
+                    <node idObject="309" type="NodePoint"/>
+                    <node idObject="310" type="NodePoint"/>
+                    <node idObject="311" type="NodePoint"/>
+                    <node after="0" idObject="312" type="NodePoint"/>
+                    <node before="0" idObject="313" type="NodePoint"/>
+                    <node idObject="314" type="NodePoint"/>
+                    <node after="0" idObject="315" type="NodePoint"/>
+                    <node before="0" idObject="316" type="NodePoint"/>
+                    <node idObject="317" type="NodePoint"/>
+                    <node idObject="318" reverse="1" type="NodeArc"/>
+                    <node idObject="319" reverse="1" type="NodeArc"/>
+                    <node after="0" idObject="320" type="NodePoint"/>
+                </nodes>
+                <iPaths>
+                    <record path="345"/>
+                    <record path="348"/>
+                    <record path="361"/>
+                    <record path="369"/>
+                    <record path="375"/>
+                </iPaths>
+            </detail>
+        </details>
+        <groups/>
+    </draw>
+    <draw name="Зад">
+        <calculation>
+            <point id="29" mx="1.32292" my="2.64583" name="Б" showLabel="true" type="single" x="7.9375" y="495.209"/>
+            <point angle="0" basePoint="29" id="30" length="165" lineColor="black" mx="1.32292" my="2.64583" name="Б1" showLabel="true" type="endLine" typeLine="hair"/>
+            <point angle="0" firstPoint="30" id="31" length="-#HD" lineColor="black" mx="1.32292" my="2.64583" name="Б2" secondPoint="29" showLabel="true" type="normal" typeLine="hair"/>
+            <point firstPoint="29" id="32" mx="1.32292" my="2.64583" name="Б3" secondPoint="31" showLabel="true" type="pointOfIntersection"/>
+            <point firstPoint="31" id="33" length="-sqrt((#W-20)^2 - Line_Б_Б1^2)" lineColor="black" mx="1.32292" my="2.64583" name="Б4" secondPoint="30" showLabel="true" type="alongLine" typeLine="none"/>
+            <point c1Center="32" c1Radius="40" c2Center="33" c2Radius="#W-20" crossPoint="2" id="34" mx="1.32292" my="2.64583" name="Б5" showLabel="true" type="pointOfIntersectionCircles"/>
+            <point angle="0" firstPoint="32" id="35" length="#HD" lineColor="black" mx="1.32292" my="2.64583" name="Б6" secondPoint="34" showLabel="true" type="normal" typeLine="hair"/>
+            <point angle="0" firstPoint="34" id="36" length="-#HD" lineColor="black" mx="1.32292" my="2.64583" name="Б7" secondPoint="32" showLabel="true" type="normal" typeLine="hair"/>
+            <operation axisType="1" center="30" id="37" suffix="б1" type="flippingByAxis">
+                <source>
+                    <item idObject="29"/>
+                    <item idObject="32"/>
+                    <item idObject="35"/>
+                    <item idObject="36"/>
+                    <item idObject="34"/>
+                </source>
+                <destination>
+                    <item idObject="38" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="39" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="40" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="41" mx="1.32292" my="2.64583" showLabel="true"/>
+                    <item idObject="42" mx="1.32292" my="2.64583" showLabel="true"/>
+                </destination>
+            </operation>
+        </calculation>
+        <modeling>
+            <point id="43" idObject="29" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="44" idObject="32" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="45" idObject="35" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="46" idObject="36" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="47" idObject="34" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="48" idObject="33" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="49" idObject="42" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="50" idObject="41" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="51" idObject="40" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="52" idObject="39" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="53" idObject="38" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="55" idObject="34" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="56" idObject="32" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="57" idObject="39" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="58" idObject="42" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <path cut="false" firstToCountour="false" id="59" inUse="false" lastToCountour="false" name="низ" type="2" typeLine="hair" visible="1">
+                <nodes>
+                    <node idObject="55" type="NodePoint"/>
+                    <node idObject="56" type="NodePoint"/>
+                    <node idObject="57" type="NodePoint"/>
+                    <node idObject="58" type="NodePoint"/>
+                </nodes>
+            </path>
+            <point id="60" idObject="32" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="61" idObject="33" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="62" idObject="39" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <path cut="false" firstToCountour="false" id="63" inUse="false" lastToCountour="false" name="Верх" type="2" typeLine="hair" visible="1">
+                <nodes>
+                    <node idObject="60" type="NodePoint"/>
+                    <node idObject="61" type="NodePoint"/>
+                    <node idObject="62" type="NodePoint"/>
+                </nodes>
+            </path>
+        </modeling>
+        <details>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="54" mx="895.609" my="-880.725" name="Корма" priority="2" seamAllowance="true" uuid="{1deb1642-212d-493a-80fb-df7ef566ba68}" version="2" width="#D">
+                <data annotation="" foldPosition="" fontSize="0" height="20" letter="" mx="456.036" my="1528.72" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="true" width="100">
+                    <line alignment="4" bold="false" italic="false" sfIncrement="2" text="%pName%"/>
+                </data>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node before="0" idObject="43" type="NodePoint"/>
+                    <node idObject="44" type="NodePoint"/>
+                    <node after="0" idObject="45" type="NodePoint"/>
+                    <node before="0" idObject="46" type="NodePoint"/>
+                    <node idObject="47" type="NodePoint"/>
+                    <node idObject="48" passmark="false" passmarkAngle="straightforward" passmarkLine="vMark" type="NodePoint"/>
+                    <node idObject="49" type="NodePoint"/>
+                    <node after="0" idObject="50" type="NodePoint"/>
+                    <node before="0" idObject="51" type="NodePoint"/>
+                    <node idObject="52" type="NodePoint"/>
+                    <node after="0" idObject="53" type="NodePoint"/>
+                </nodes>
+                <iPaths>
+                    <record path="59"/>
+                    <record path="63"/>
+                </iPaths>
+            </detail>
+        </details>
+        <groups/>
+    </draw>
+    <draw name="Перед низ">
+        <calculation>
+            <point id="69" mx="1.32292" my="2.64583" name="Г" showLabel="true" type="single" x="912.331" y="10.5833"/>
+            <point angle="0" basePoint="69" id="70" length="2*(Arc_А27_305 + sqrt(#W^2-(#W-10)^2))" lineColor="black" mx="1.32292" my="2.64583" name="Г1" showLabel="true" type="endLine" typeLine="hair"/>
+            <point angle="0" firstPoint="69" id="71" length="#HD" lineColor="black" mx="1.32292" my="2.64583" name="Г2" secondPoint="70" showLabel="true" type="normal" typeLine="hair"/>
+            <point firstPoint="70" id="72" mx="1.32292" my="2.64583" name="Г3" secondPoint="71" showLabel="true" type="pointOfIntersection"/>
+        </calculation>
+        <modeling>
+            <point id="73" idObject="69" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="74" idObject="71" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="75" idObject="72" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+            <point id="76" idObject="70" inUse="false" mx="1.32292" my="2.64583" showLabel="true" type="modeling"/>
+        </modeling>
+        <details>
+            <detail forbidFlipping="false" forceFlipping="false" hideMainPath="false" id="77" mx="-67.648" my="-180.112" name="Нос низ" priority="3" seamAllowance="true" uuid="{a8145ed1-d882-4f6d-ba54-c4fcd875f4ba}" version="2" width="#D">
+                <data annotation="" foldPosition="" fontSize="0" height="20" letter="" mx="4164.86" my="-68.2134" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="true" width="100">
+                    <line alignment="4" bold="false" italic="false" sfIncrement="2" text="%pName%"/>
+                </data>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node before="0" idObject="73" type="NodePoint"/>
+                    <node idObject="74" type="NodePoint"/>
+                    <node idObject="75" type="NodePoint"/>
+                    <node after="0" idObject="76" type="NodePoint"/>
+                </nodes>
+            </detail>
+        </details>
+        <groups/>
+    </draw>
+</pattern>
